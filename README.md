@@ -1,2 +1,0 @@
-# WrightBuildingsLLC.com
-WrightBuildingsLLC.com
