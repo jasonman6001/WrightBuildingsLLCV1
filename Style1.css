@@ -459,47 +459,50 @@
 }
 
 .About_Product {
-    height: 321px;
-    background-image: url(img/Product1.png);
+    height: 100%;
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     line-height: 1.5rem;
     top: 0%;
-    padding: 20px 20px;
+    padding: 0px 0px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.9), 0 6px 20px 0 rgba(0,0,0,0.9);
     cursor: pointer;
-    left: 2%;
-    transform: scale(0.9);
-    width: 400px;
+    left: 3%;
+    transform: scale(1.0); 
+    width: 21.0%;
     position: absolute;
     font-size: 1.0rem;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.9), 0 6px 20px 0 rgba(0,0,0,0.9);
     z-index: 50;
     opacity: 100%;
 }
 
+.img_Product {
+    width: 100%;
+    height: 100%;
+
+}
+
 .About_Product:hover {
-    transform: scale(1.00);
+    transform: scale(.9);
     transition: 0.5s; 
-    background-color: #333333;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.9), 0 6px 20px 0 rgba(0,0,0,0.9);
     opacity: 80%;
 }
 
 .About_Product2 {
-    height: 321px;
-    background-image: url(img/Product2.png);
+    height: 100%;
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     line-height: 1.5rem;
     top: 0%;
-    padding: 20px 20px;
+    padding: 0px 0px;
     left: 27%;
-    transform: scale(0.9);
-    width: 400px;
+    transform: scale(1.0);
+    width: 21.0%;
     cursor: pointer;
     position: absolute;
     font-size: 1.0rem;
@@ -509,7 +512,7 @@
 }
 
 .About_Product2:hover {
-    transform: scale(1.00);
+    transform: scale(.9);
     transition: 0.5s; 
     background-color: #333333;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.9), 0 6px 20px 0 rgba(0,0,0,0.9);
@@ -517,7 +520,7 @@
 }
 
 .About_Product3 {
-    height: 321px;
+    height: 100%;
     background-image: url(img/Product3.png);
     color: #fff;
     display: flex;
@@ -526,10 +529,10 @@
     line-height: 1.5rem;
     top: 0%;
     cursor: pointer;
-    padding: 20px 20px;
+    padding: 0px 0px;
     left: 51%;
-    transform: scale(0.9);
-    width: 400px;
+    transform: scale(1.0);
+    width: 21.0%;
     position: absolute;
     font-size: 1.0rem;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.9), 0 6px 20px 0 rgba(0,0,0,0.9);
@@ -538,7 +541,7 @@
 }
 
 .About_Product3:hover {
-    transform: scale(1.00);
+    transform: scale(.9);
     transition: 0.5s; 
     background-color: #333333;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.9), 0 6px 20px 0 rgba(0,0,0,0.9);
@@ -546,7 +549,7 @@
 }
 
 .About_Product4 {
-    height: 321px;
+    height: 100%;
     background-image: url(img/Product4.png);
     color: #fff;
     display: flex;
@@ -555,10 +558,10 @@
     line-height: 1.5rem;
     cursor: pointer;
     top: 0%;
-    padding: 20px 20px;
-    left: 77%;
-    transform: scale(0.9);
-    width: 400px;
+    padding: 0px 0px;
+    left: 75%;
+    transform: scale(1.0);
+    width: 21.0%;
     position: absolute;
     font-size: 1.0rem;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.9), 0 6px 20px 0 rgba(0,0,0,0.9);
@@ -567,7 +570,7 @@
 }
 
 .About_Product4:hover {
-    transform: scale(1.00);
+    transform: scale(.9);
     transition: 0.5s; 
     background-color: #333333;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.9), 0 6px 20px 0 rgba(0,0,0,0.9);
@@ -639,8 +642,8 @@
     line-height: 1.5rem;
     top: 2%;
     padding: 20px 20px;
-    left: 26%;
-    width: 50%;
+    right: 5%;
+    width: 400px;
     box-shadow: 0 -1px 58px 0 rgb(0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
     border-bottom-right-radius: 10px;
     border-bottom-Left-radius: 10px;
@@ -651,18 +654,17 @@
 }
 
 .About_Whyus {
-    height: 220px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: end;
+    height: 125px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: #fff;
-    top: 0%;
+    top: 15%;
     left: 0%;
-    padding: 40px 20px;
     width: 100%;
     position: absolute;
     font-size: 2.2rem;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.9), 0 6px 20px 0 rgba(0,0,0,0.9);
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 90%), 0 6px 20px 0 rgb(0 0 0 / 90%);
     z-index: 50;
     opacity: 100%;
 }
@@ -671,7 +673,7 @@
     width: 175px;
     left: 510px;
     height: 60px;
-    position: absolute;
+    
 }
 
 .Text2 {    
@@ -679,7 +681,7 @@
     left: 700px;
     transform: scale(1.1);
     height: 60px;
-    position: absolute;
+    
 }
 
 .Text3 {    
@@ -688,14 +690,13 @@
     left: 830px;
     transform: scale(1.1);
     height: 60px;
-    position: absolute;
+    
 }
 
 .Text4 {    
     width: 300px;
     left: 1060px;
     height: 60px;
-    position: absolute;
 }
 
 p::first-letter {
@@ -716,12 +717,12 @@ p::first-letter {
 }
 
 .About_ThreeBoxes_box1 {
-    height: 400px;
+    height: 85%;
     background-color: #ffffff;
-    top: 7%;
+    top: 10%;
     padding: 20px 20px;
-    left: 195px;
-    width: 450px;
+    left: 10%;
+    width: 24%;
     border-radius: 5px;
     position: absolute;
     font-size: 1.0rem;
@@ -731,53 +732,47 @@ p::first-letter {
 }
 
 .About_ThreeBoxes_box1_img {
-    height: 140px;
-    background-image: url(img/Experiencepng.png);
-    top: 20px;
+    height: 40%;
+    /* background-image: url(img/Experiencepng.png); */
+    top: 3%;
     padding: 0px 0px;
-    left: 133px;
-    width: 170px;
-    position: absolute;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.4);
+    width: 40%;
+    /* position: absolute; */
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 40%);
     font-size: 1.0rem;
     z-index: 1;
     opacity: 100%;
 }
 
 .About_ThreeBoxes_box1_Text {
-    height: 35px;
+    height: 10%;
     color: #1f1f1f;
-    top: 180px;
-    padding: 0px 0px;
-    left: 136px;
-    width: 170px;
-    position: absolute;
+    padding: 0px 150px;
     font-size: 1.5rem;
     z-index: 1;
     opacity: 100%;
 }
 
 .About_ThreeBoxes_box1_description {
-    height: 170px;
+    height: 50%;
     background-color: #ffffff;
     color: #000000;
     top: 220px;
-    padding: 0px 30px;
+    padding: 0px 20px;
     left: 0px;
-    width: 450px;
-    position: absolute;
+    width: 100%;
     font-size: 1.0rem;
     z-index: 1;
     opacity: 100%;
 }
 
 .About_ThreeBoxes_box2 {
-    height: 400px;
+    height: 85%;
     background-color: #ffffff;
-    top: 7%;
+    top: 10%;
     padding: 20px 20px;
-    left: 700px;
-    width: 450px;
+    left: 35%;
+    width: 24%;
     border-radius: 5px;
     position: absolute;
     font-size: 1.0rem;
@@ -787,96 +782,81 @@ p::first-letter {
 }
 
 .About_ThreeBoxes_box2_img {
-    height: 140px;
-    background-image: url(img/Experience2png.png);
-    top: 20px;
+    height: 40%;
+    /* background-image: url(img/Experiencepng.png); */
+    top: 3%;
     padding: 0px 0px;
-    left: 125px;
-    width: 170px;
-    position: absolute;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.4);
+    width: 40%;
+    /* position: absolute; */
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 40%);
     font-size: 1.0rem;
     z-index: 1;
     opacity: 100%;
 }
 
 .About_ThreeBoxes_box2_Text {
-    height: 35px;
+    height: 10%;
     color: #1f1f1f;
-    top: 180px;
-    padding: 0px 0px;
-    left: 150px;
-    width: 122px;
-    position: absolute;
+    padding: 0px 160px;
     font-size: 1.5rem;
     z-index: 1;
     opacity: 100%;
 }
 
 .About_ThreeBoxes_box2_description {
-    height: 170px;
+    height: 50%;
     background-color: #ffffff;
     color: #000000;
-    top: 220px;
-    padding: 0px 30px;
-    left: 0px;
-    width: 450px;
-    position: absolute;
+    padding: 0px 20px;
+    width: 100%;
     font-size: 1.0rem;
     z-index: 1;
     opacity: 100%;
 }
 
 .About_ThreeBoxes_box3 {
-    height: 400px;
+    height: 85%;
     background-color: #ffffff;
-    top: 7%;
+    top: 10%;
     padding: 20px 20px;
-    left: 1200px;
-    width: 450px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.4);
+    left: 60%;
+    width: 24%;
+    border-radius: 5px;
     position: absolute;
     font-size: 1.0rem;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.4);
     z-index: 1;
     opacity: 100%;
 }
 
 .About_ThreeBoxes_box3_img {
-    height: 140px;
-    background-image: url(img/Experiencepng.png);
-    top: 20px;
+    height: 40%;
+    /* background-image: url(img/Experiencepng.png); */
+    top: 3%;
     padding: 0px 0px;
-    left: 133px;
-    width: 170px;
-    position: absolute;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.4);
+    width: 40%;
+    /* position: absolute; */
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 40%);
     font-size: 1.0rem;
     z-index: 1;
     opacity: 100%;
 }
 
 .About_ThreeBoxes_box3_Text {
-    height: 35px;
+    height: 10%;
     color: #1f1f1f;
-    top: 180px;
-    padding: 0px 0px;
-    left: 68px;
-    width: 305px;
-    position: absolute;
+    padding: 0px 100px;
     font-size: 1.5rem;
     z-index: 1;
     opacity: 100%;
 }
 
 .About_ThreeBoxes_box3_description {
-    height: 170px;
+    height: 50%;
     background-color: #ffffff;
     color: #000000;
-    top: 220px;
-    padding: 0px 30px;
-    left: 0px;
-    width: 450px;
-    position: absolute;
+    padding: 0px 20px;
+    width: 100%;
     font-size: 1.0rem;
     z-index: 1;
     opacity: 100%;
@@ -1137,7 +1117,7 @@ p::first-letter {
     z-index: 2;
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1600px) {
     #navbar_Email {
         background-size: 100%;
         display: flex;
@@ -1218,6 +1198,15 @@ p::first-letter {
         transition: 0.5s;
     }
 
+    .About_ThreeBoxes {
+        height: 380px;
+        bottom: 8%;
+    }
+
+    .Aboutme_info {
+        height: 221px;
+    }
+
     .Aboutme_Contact_Text1 {
         background-color: #1f1f1f;
         color: #fff;
@@ -1226,10 +1215,10 @@ p::first-letter {
         left: 0%;
         display: flex;
         width: 70%;
-        padding: 10px 18px;
+        padding: 10px 60px;
         position: absolute;
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0,0,0,0.9);
-        font-size: 1.0rem;
+        font-size: 2.0rem;
         z-index: 1;
         opacity: 90%;
     }
@@ -1242,11 +1231,292 @@ p::first-letter {
         left: 0%;
         display: flex;
         width: 60%;
-        padding: 10px 18px;
+        padding: 10px 180px;
         position: absolute;
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0,0,0,0.9);
-        font-size: 0.9rem;
+        font-size: 1.9rem;
         z-index: 1;
         opacity: 90%;
     }
-}
+
+    .navbar_btn {
+        display: none;
+    }
+
+    @media only screen and (max-width: 1435px) {
+        .Aboutme_Contact_Text1 {
+            background-color: #1f1f1f;
+            color: #fff;
+            height: 65px;
+            top: 18%;
+            left: 0%;
+            display: flex;
+            width: 70%;
+            padding: 20px 80px;
+            position: absolute;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0,0,0,0.9);
+            font-size: 1.4rem;
+            z-index: 1;
+            opacity: 90%;
+        }
+    
+        .Aboutme_Contact_Text2 {
+            background-color: #1f1f1f;
+            color: #fff;
+            height: 45px;
+            top: 36%;
+            left: 0%;
+            display: flex;
+            width: 60%;
+            padding: 10px 180px;
+            position: absolute;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0,0,0,0.9);
+            font-size: 1.2rem;
+            z-index: 1;
+            opacity: 90%;
+        }
+
+        .navbar_btn {
+            display: none;
+        }
+
+    }
+
+        @media only screen and (max-width: 1030px) {
+            .Aboutme_Contact_Text1 {
+                background-color: #1f1f1f;
+                color: #fff;
+                height: 65px;
+                top: 18%;
+                left: 0%;
+                display: flex;
+                width: 70%;
+                padding: 20px 20px;
+                position: absolute;
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0,0,0,0.9);
+                font-size: 1.1rem;
+                z-index: 1;
+                opacity: 90%;
+            }
+        
+            .Aboutme_Contact_Text2 {
+                background-color: #1f1f1f;
+                color: #fff;
+                height: 45px;
+                top: 36%;
+                left: 0%;
+                display: flex;
+                width: 60%;
+                padding: 10px 80px;
+                position: absolute;
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0,0,0,0.9);
+                font-size: 1.0rem;
+                z-index: 1;
+                opacity: 90%;
+            }
+    
+            .navbar_btn {
+                display: none;
+            }
+        }
+
+        @media only screen and (max-width: 690px) {
+            .Aboutme_Contact_Text1 {
+                background-color: #1f1f1f;
+                color: #fff;
+                height: 65px;
+                top: 18%;
+                left: 0%;
+                display: flex;
+                width: 70%;
+                padding: 20px 20px;
+                position: absolute;
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0,0,0,0.9);
+                font-size: .9rem;
+                z-index: 1;
+                opacity: 90%;
+            }
+        
+            .Aboutme_Contact_Text2 {
+                background-color: #1f1f1f;
+                color: #fff;
+                height: 45px;
+                top: 36%;
+                left: 0%;
+                display: flex;
+                width: 60%;
+                padding: 15px 20px;
+                position: absolute;
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0,0,0,0.9);
+                font-size: .9rem;
+                z-index: 1;
+                opacity: 90%;
+            }
+
+            .About_Whyus {
+                height: 125px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: #fff;
+                top: 15%;
+                left: 0%;
+                width: 100%;
+                position: absolute;
+                font-size: .9rem;
+                box-shadow: 0 8px 16px 0 rgb(0 0 0 / 90%), 0 6px 20px 0 rgb(0 0 0 / 90%);
+                z-index: 50;
+                opacity: 100%;
+            }
+
+            .About_ThreeBoxes {
+                height: 200px;
+                color: #fff;
+                bottom: 36%;
+                left: 0%;
+                padding: 0px 0px;
+                width: 100%;
+                position: absolute;
+                font-size: 2.6rem;
+                z-index: 10;
+                opacity: 100%;
+            }
+
+            .About_ThreeBoxes_box1 {
+                height: 85%;
+                background-color: #ffffff;
+                top: 10%;
+                padding: 10px 10px;
+                left: 0%;
+                width: 34%;
+                border-radius: 0px;
+                position: absolute;
+                font-size: 1.0rem;
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.4);
+                z-index: 1;
+                opacity: 100%;
+            }
+            
+            .About_ThreeBoxes_box1_img {
+                height: 40%;
+                /* background-image: url(img/Experiencepng.png); */
+                top: 3%;
+                padding: 0px 0px;
+                width: 40%;
+                /* position: absolute; */
+                box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 40%);
+                font-size: 1.0rem;
+                z-index: 1;
+                opacity: 100%;
+            }
+            
+            .About_ThreeBoxes_box1_Text {
+                height: 10%;
+                color: #1f1f1f;
+                padding: 0px 0px;
+                font-size: .7rem;
+                z-index: 1;
+                opacity: 100%;
+            }
+            
+            .About_ThreeBoxes_box1_description {
+                height: 50%;
+                background-color: #ffffff;
+                color: #000000;
+                top: 220px;
+                padding: 0px 0px;
+                left: 0px;
+                width: 100%;
+                font-size: .5rem;
+                z-index: 1;
+                opacity: 100%;
+            }
+
+            .About_ThreeBoxes_box2 {
+                height: 85%;
+                background-color: #ffffff;
+                top: 10%;
+                padding: 10px 10px;
+                left: 33%;
+                width: 34%;
+                border-radius: 0px;
+                position: absolute;
+                font-size: 1.0rem;
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.4);
+                z-index: 1;
+                opacity: 100%;
+            }
+            
+            .About_ThreeBoxes_box2_img {
+                height: 40%;
+                /* background-image: url(img/Experiencepng.png); */
+                top: 3%;
+                padding: 0px 0px;
+                width: 40%;
+                /* position: absolute; */
+                box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 40%);
+                font-size: 1.0rem;
+                z-index: 1;
+                opacity: 100%;
+            }
+            
+            .About_ThreeBoxes_box2_Text {
+                height: 10%;
+                color: #1f1f1f;
+                padding: 0px 0px;
+                font-size: .7rem;
+                z-index: 1;
+                opacity: 100%;
+            }
+            
+            .About_ThreeBoxes_box2_description {
+                height: 50%;
+                background-color: #ffffff;
+                color: #000000;
+                padding: 0px 0px;
+                width: 100%;
+                font-size: .5rem;
+                z-index: 1;
+                opacity: 100%;
+            }
+
+            .About_ThreeBoxes_box3 {
+                height: 85%;
+                background-color: #ffffff;
+                top: 10%;
+                padding: 10px 10px;
+                left: 66%;
+                width: 34%;
+                border-radius: 0px;
+                position: absolute;
+                font-size: 1.0rem;
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.4);
+                z-index: 1;
+                opacity: 100%;
+            }
+
+            .About_ThreeBoxes_box3_Text {
+                height: 10%;
+                color: #1f1f1f;
+                padding: 0px 0px;
+                width: 100%;
+                font-size: .6rem;
+                z-index: 1;
+                opacity: 100%;
+            }
+            
+            .About_ThreeBoxes_box3_description {
+                height: 50%;
+                background-color: #ffffff;
+                color: #000000;
+                padding: 0px 0px;
+                width: 100%;
+                font-size: .5rem;
+                z-index: 1;
+                opacity: 100%;
+            }
+    
+            .navbar_btn {
+                display: none;
+            }
+        }
