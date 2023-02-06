@@ -229,11 +229,11 @@
     align-items: center;
     font-size: 1.2rem;
     position: absolute;
-    top: 700px;
+    top: 635px;
     left: 45%;
     cursor: pointer;
     z-index: 5;
-    border-radius: 120px;
+    border-radius: 10px;
     padding: 20px 30px;
     background-image: linear-gradient(rgb(78, 78, 78),rgb(31, 31, 31));
     color: rgb(255, 255, 255);
@@ -262,8 +262,9 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 10px;
-    font-size: 4rem;
+    padding: 5px 15px;
+    font-size: 1rem;
+    border-radius: 120px;
     position: absolute;
     top: 420px;
     cursor: pointer;
@@ -285,8 +286,9 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 10px;
-    font-size: 4rem;
+    padding: 5px 15px;
+    font-size: 1rem;
+    border-radius: 120px;
     position: absolute;
     top: 420px;
         cursor: pointer;
@@ -465,7 +467,7 @@
     width: 30%;
     font-style: italic;
     text-indent: 1em;
-    padding: 0px 50px;
+    padding: 0px 20px;
     position: absolute;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0,0,0,0.9);
     font-size: 1.2rem;
@@ -677,7 +679,7 @@
     color: #fff;
     top: 15%;
     left: 0%;
-    padding: 20px 530px;
+    padding: 20px 470px;
     width: 100%;
     position: absolute;
     font-size: 2.2rem;
@@ -757,7 +759,7 @@ p::first-letter {
 .About_ThreeBoxes_box1_Text {
     height: 10%;
     color: #1f1f1f;
-    padding: 0px 150px;
+    padding: 7px 126px;
     font-size: 1.5rem;
     z-index: 1;
     opacity: 100%;
@@ -807,7 +809,7 @@ p::first-letter {
 .About_ThreeBoxes_box2_Text {
     height: 10%;
     color: #1f1f1f;
-    padding: 0px 160px;
+    padding: 7px 145px;
     font-size: 1.5rem;
     z-index: 1;
     opacity: 100%;
@@ -855,7 +857,7 @@ p::first-letter {
 .About_ThreeBoxes_box3_Text {
     height: 10%;
     color: #1f1f1f;
-    padding: 0px 100px;
+    padding: 7px 82px;
     font-size: 1.5rem;
     z-index: 1;
     opacity: 100%;
@@ -1316,6 +1318,19 @@ p::first-letter {
                 z-index: 1;
                 opacity: 90%;
             }
+            .Aboutme_Contact_Text3 {
+                background-color: #1f1f1f;
+                color: #fff;
+                height: 30px;
+                bottom: 17%;
+                right: 0%;
+                display: flex;
+                width: 50%;
+                font-style: italic;
+                text-indent: 1em;
+                padding: 2px 13px;
+                font-size: .7rem;
+            }
         
             .Aboutme_Contact_Text2 {
                 background-color: #1f1f1f;
@@ -1332,13 +1347,53 @@ p::first-letter {
                 z-index: 1;
                 opacity: 90%;
             }
+
+            .About_Whyus {
+                padding: 20px 0px;
+            }
     
             .navbar_btn {
                 display: none;
             }
-        }
 
-        @media only screen and (max-width: 990px) {
+            .About_ThreeBoxes_box1_Text {
+                padding: 6px 33px;
+                font-size: 1rem;
+            }
+
+            .About_ThreeBoxes_box1_description {
+                padding: 0px 0px;
+                font-size: .9rem;
+            }
+
+            .About_ThreeBoxes_box2_Text {
+                padding: 6px 45px;
+                font-size: 1rem;
+            }
+
+            .About_ThreeBoxes_box2_description {
+                padding: 0px 0px;
+                font-size: .75rem;
+            }
+
+            .About_ThreeBoxes_box3_description {
+                padding: 0px 0px;
+                font-size: .75rem;
+            }
+
+            .About_ThreeBoxes_box3_Text {
+                padding: 7px 0px;
+                font-size: 1rem;
+            }
+
+            .Footer_Manu {
+                right: 3%;
+                width: 30%;
+            }
+        }
+        
+
+        @media only screen and (max-width: 750px) {
             .Aboutme_Contact_Text1 {
                 background-color: #1f1f1f;
                 color: #fff;
@@ -1712,8 +1767,9 @@ p::first-letter {
                 display: inline-flex;
                 justify-content: center;
                 align-items: center;
-                padding: 0px 0px;
-                font-size: 4rem;
+                padding: 5px 15px;
+                font-size: 1rem;
+                border-radius: 120px;
                 position: absolute;
                 top: 50%;
                 cursor: pointer;
@@ -1727,8 +1783,9 @@ p::first-letter {
                 display: inline-flex;
                 justify-content: center;
                 align-items: center;
-                padding: 0px 0px;
-                font-size: 4rem;
+                padding: 5px 15px;
+                font-size: 1rem;
+                border-radius: 120px;
                 position: absolute;
                 top: 50%;
                 cursor: pointer;
