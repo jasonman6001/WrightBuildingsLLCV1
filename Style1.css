@@ -1528,9 +1528,9 @@ p::first-letter {
             }
 
             .About_ThreeBoxes {
-                height: 320px;
+                height: 340px;
                 color: #fff;
-                bottom: 40%;
+                bottom: 35%;
                 left: 0%;
                 padding: 0px 0px;
                 width: 100%;
@@ -1560,7 +1560,7 @@ p::first-letter {
                 /* background-image: url(img/Experiencepng.png); */
                 top: 3%;
                 padding: 0px 0px;
-                width: 40%;
+                width: 100%;
                 /* position: absolute; */
                 box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 40%);
                 font-size: 1.0rem;
@@ -1611,7 +1611,7 @@ p::first-letter {
                 /* background-image: url(img/Experiencepng.png); */
                 top: 3%;
                 padding: 0px 0px;
-                width: 40%;
+                width: 50%;
                 /* position: absolute; */
                 box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 40%);
                 font-size: 1.0rem;
@@ -1799,15 +1799,15 @@ p::first-letter {
             }
 
             .About_ThreeBoxes_box1_img {
-                width: 65%;
+                width: 100%;
             }
 
             .About_ThreeBoxes_box2_img {
-                width: 65%;
+                width: 100%;
             }
 
             .About_ThreeBoxes_box3_img {
-                width: 65%;
+                width: 100%;
             }
 
             .Footer_Manu {
