@@ -1757,22 +1757,11 @@ p::first-letter {
 
             .Footer_Help {
                 color: rgb(255, 255, 255);
-                height: 24px;
-                display: flex;
-                top: 50%;
-                left: 15%;
-                width: 255px;
-                position: absolute;
-                z-index: 2;
-            }
-
-            .Footer_Help {
-                color: rgb(255, 255, 255);
                 height: 20px;
                 display: flex;
                 top: 50%;
-                left: 17%;
-                width: 255px;
+                left: 13%;
+                width: 285px;
                 position: absolute;
                 z-index: 2;
             }
