@@ -213,6 +213,16 @@
     z-index: 1;
 }
 
+.WB-content {
+    position: relative;
+    z-index: 5;
+    padding: 0px 0px;
+    background-image: linear-gradient(rgb(78, 78, 78),rgb(31, 31, 31));
+    color: rgb(255, 255, 255);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.2);
+    opacity: 90%;
+}
+
 .WBSlideShow {
     display: flex;
     justify-content: center;
@@ -1602,6 +1612,119 @@ p::first-letter {
             }
     
             .navbar_btn {
+                display: none;
+            }
+
+            .mySlides {
+                height: 400px;
+                width: 100%;
+                padding: 0px 0px;
+                z-index: 5;
+                background-color: #424242;
+                box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+            }
+
+            .WBSlideShow {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.0rem;
+                position: absolute;
+                top: 84%;
+                left: 34%;
+                cursor: pointer;
+                z-index: 5;
+                /* border-radius: 120px; */
+                padding: 10px 20px;
+                background-image: linear-gradient(rgb(78, 78, 78),rgb(31, 31, 31));
+                color: rgb(255, 255, 255);
+                box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 20%);
+                opacity: 90%;
+            }
+
+            .WB-right {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0px 0px;
+                font-size: 4rem;
+                position: absolute;
+                top: 50%;
+                cursor: pointer;
+                right: 1%;
+                background-image: linear-gradient(rgb(41, 41, 41),rgb(31, 31, 31));
+                color: rgb(255, 255, 255);
+                opacity: 70%;
+            }
+
+            .WB-left {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0px 0px;
+                font-size: 4rem;
+                position: absolute;
+                top: 50%;
+                cursor: pointer;
+                left: 1%;
+                background-image: linear-gradient(rgb(41, 41, 41),rgb(31, 31, 31));
+                color: rgb(255, 255, 255);
+                opacity: 70%;
+            }
+
+            .Footer_Panelleft {
+                height: 300px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                top: 0%;
+                left: 0%;
+                cursor: pointer;
+                width: 100%;
+                font-size: .9rem;
+                position: absolute;
+                z-index: 1;
+            }
+
+            .Footer_ContactUs {
+                color: rgb(255, 255, 255);
+                background-color: #171819;
+                height: 40px;
+                display: flex;
+                top: 60%;
+                left: 17%;
+                transition: 1.0s;
+                cursor: pointer;
+                box-shadow: 0 0px 3px 0 rgb(255 255 255 / 90%), 0 0px 0px 0 rgb(252 248 248 / 70%);
+                width: 260px;
+                position: absolute;
+                z-index: 2;
+            }
+
+            .Footer_Help {
+                color: rgb(255, 255, 255);
+                height: 20px;
+                display: flex;
+                top: 50%;
+                left: 0%;
+                width: 100%;
+                position: absolute;
+                z-index: 2;
+            }
+
+            .Footer_Social {
+                color: rgb(255, 255, 255);
+                height: 70px;
+                display: flex;
+                top: 80%;
+                left: 18%;
+                transition: 1.0s;
+                width: 260px;
+                position: absolute;
+                z-index: 1;
+            }
+
+            .Footer_Manu {
                 display: none;
             }
         }
