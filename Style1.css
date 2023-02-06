@@ -1043,8 +1043,8 @@ p::first-letter {
     left: 0%;
     height: 30%;
     width: 100%;
-    background-color: #171819;
-    box-shadow: 0 0px 3px 0 rgba(255, 255, 255, 0.9), 0 0px 0px 0 rgba(252, 248, 248, 0.7);
+    /* background-color: #171819; */
+    /* box-shadow: 0 0px 3px 0 rgba(255, 255, 255, 0.9), 0 0px 0px 0 rgba(252, 248, 248, 0.7); */
     opacity: 60%;
     z-index: 3;
 }
@@ -1124,7 +1124,7 @@ p::first-letter {
     z-index: 2;
 }
 
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1712px) {
     #navbar_Email {
         background-size: 100%;
         display: flex;
@@ -1246,11 +1246,15 @@ p::first-letter {
         opacity: 90%;
     }
 
+    .About_Whyus {
+        padding: 20px 300px;
+    }
+
     .navbar_btn {
         display: none;
     }
 
-    @media only screen and (max-width: 1435px) {
+    @media only screen and (max-width: 1410px) {
         .Aboutme_Contact_Text1 {
             background-color: #1f1f1f;
             color: #fff;
@@ -1283,8 +1287,20 @@ p::first-letter {
             opacity: 90%;
         }
 
+        .Aboutme_Contact_img {
+            width: 29%;
+        }
+
         .navbar_btn {
             display: none;
+        }
+
+        .About_Whyus {
+            padding: 20px 100px;
+        }
+
+        .Aboutme_Contact_Text3 {
+            width: 50%;
         }
 
     }
@@ -1312,7 +1328,7 @@ p::first-letter {
                 bottom: 17%;
                 right: 0%;
                 display: flex;
-                width: 50%;
+                width: 40%;
                 font-style: italic;
                 text-indent: 1em;
                 padding: 2px 13px;
