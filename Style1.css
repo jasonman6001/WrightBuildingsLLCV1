@@ -382,7 +382,7 @@
 }
 
 .Aboutme_Contact {
-    background-image: url(img/MainScreenV2.png);
+    background-image: url(img/MainScreenV3.png);
     height: 370px;
     top: 10px;
     left: 0%;
@@ -912,10 +912,10 @@ p::first-letter {
 }
 
 .img-Footer {
-    width: 120px;
+    width: 232px;
     position: absolute;
     top: 10%;
-    left: 2%;
+    left: 10%;
     transition: 0.5s;
 }
 
@@ -932,7 +932,6 @@ p::first-letter {
 
 .Footer_Help_Text {
     font-size: .9rem;
-    width: ;
 }
 
 .Footer_ContactUs {
@@ -1802,3 +1801,4 @@ p::first-letter {
                 display: none;
             }
         }
+}
