@@ -403,6 +403,7 @@
     left: 0%;
     display: flex;
     width: 70%;
+    font-style: italic;
     padding: 10px 30px;
     position: absolute;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0,0,0,0.9);
@@ -419,6 +420,7 @@
     left: 0%;
     display: flex;
     width: 50%;
+    font-style: italic;
     padding: 10px 124px;
     position: absolute;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0,0,0,0.9);
@@ -444,6 +446,7 @@
     width: 100%;
     position: absolute;
     top: 10%;
+    
     left: 0%;
     transition: 0.5s;
 }
@@ -460,10 +463,12 @@
     right: 0%;
     display: flex;
     width: 30%;
-    padding: 10px 124px;
+    font-style: italic;
+    text-indent: 1em;
+    padding: 0px 50px;
     position: absolute;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0,0,0,0.9);
-    font-size: 2.2rem;
+    font-size: 1.2rem;
     z-index: 1;
     opacity: 90%;
 }
@@ -597,8 +602,8 @@
 
 .Aboutme_Product_Home {
     height: 45px;
-    background-image: linear-gradient(rgb(180 104 6), rgb(206 120 20) 10% 30%, #da7b00 50% 70%, #5a3301 90%);
-    color: #ffffff;
+    background-color: #03a9f4;
+    color: #000000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -618,9 +623,8 @@
 }
 
 .Aboutme_Product_Home:hover {
-    transform: scale(1.05);
-    color: #03a9f4;
-    font-size: 1.5rem;
+    color: #ffffff;
+    font-size: 1.4rem;
     transition: 0.5s; 
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.9), 0 6px 20px 0 rgba(0,0,0,0.9);
     opacity: 100%;
@@ -644,8 +648,8 @@
 
 .Aboutme_Product_Discount {
     height: 45px;
-    background-image: linear-gradient(rgb(180 104 6), rgb(206 120 20) 10% 30%, #da7b00 50% 70%, #5a3301 90%);
-    color: #ffffff;
+    background-color: #03a9f4;
+    color: #000000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1324,7 +1328,7 @@ p::first-letter {
             }
         }
 
-        @media only screen and (max-width: 690px) {
+        @media only screen and (max-width: 990px) {
             .Aboutme_Contact_Text1 {
                 background-color: #1f1f1f;
                 color: #fff;
@@ -1340,6 +1344,37 @@ p::first-letter {
                 z-index: 1;
                 opacity: 90%;
             }
+
+            #navbar_Email {
+                right: 35%;
+            }
+
+            .Nav_PhoneNumer {
+                left: 41%;
+            }
+
+            .Nav_Location {
+                left: 45%;
+            }
+
+            .Nav_OpenCloseHours {
+                left: 40%;
+            }
+
+            .Aboutme_Contact_Text3 {
+                background-color: #1f1f1f;
+                color: #fff;
+                height: 30px;
+                bottom: 17%;
+                right: 0%;
+                display: flex;
+                width: 82%;
+                font-style: italic;
+                text-indent: 1em;
+                padding: 2px 13px;
+                font-size: .7rem;
+            }
+
         
             .Aboutme_Contact_Text2 {
                 background-color: #1f1f1f;
@@ -1349,7 +1384,7 @@ p::first-letter {
                 left: 0%;
                 display: flex;
                 width: 60%;
-                padding: 15px 20px;
+                padding: 12px 16px;
                 position: absolute;
                 box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0,0,0,0.9);
                 font-size: .9rem;
@@ -1407,7 +1442,7 @@ p::first-letter {
 
             .Aboutme_Product_Home {
                 height: 45px;
-                background-image: linear-gradient(rgb(134, 0, 0), rgb(136, 0, 0) 10% 30%, #a10000 50% 70%, #5a0101 90%);
+                background-color: #616161;
                 color: #ffffff;
                 display: flex;
                 justify-content: center;
@@ -1427,9 +1462,18 @@ p::first-letter {
                 opacity: 100%;
             }
 
+            .Aboutme_Product_Home:hover {
+                transform: scale(1.0);
+                color: #03a9f4;
+                font-size: .9rem;
+                transition: 0.5s; 
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.9), 0 6px 20px 0 rgba(0,0,0,0.9);
+                opacity: 100%;
+            }
+
             .Aboutme_Product_Discount {
                 height: 45px;
-                background-image: linear-gradient(rgb(134, 0, 0), rgb(136, 0, 0) 10% 30%, #a10000 50% 70%, #5a0101 90%);
+                background-color: #616161;
                 color: #ffffff;
                 display: flex;
                 justify-content: center;
@@ -1480,10 +1524,10 @@ p::first-letter {
             .About_ThreeBoxes_box1 {
                 height: 85%;
                 background-color: #ffffff;
-                top: 10%;
+                top: 30%;
                 padding: 10px 10px;
-                left: 0%;
-                width: 34%;
+                left: 1%;
+                width: 31%;
                 border-radius: 0px;
                 position: absolute;
                 font-size: 1.0rem;
@@ -1522,7 +1566,7 @@ p::first-letter {
                 padding: 0px 0px;
                 left: 0px;
                 width: 100%;
-                font-size: .55rem;
+                font-size: .5rem;
                 z-index: 1;
                 opacity: 100%;
             }
@@ -1530,10 +1574,10 @@ p::first-letter {
             .About_ThreeBoxes_box2 {
                 height: 85%;
                 background-color: #ffffff;
-                top: 10%;
+                top: 30%;
                 padding: 10px 10px;
                 left: 33%;
-                width: 34%;
+                width: 32%;
                 border-radius: 0px;
                 position: absolute;
                 font-size: 1.0rem;
@@ -1570,7 +1614,7 @@ p::first-letter {
                 color: #000000;
                 padding: 0px 0px;
                 width: 100%;
-                font-size: .52rem;
+                font-size: .50rem;
                 z-index: 1;
                 opacity: 100%;
             }
@@ -1578,10 +1622,10 @@ p::first-letter {
             .About_ThreeBoxes_box3 {
                 height: 85%;
                 background-color: #ffffff;
-                top: 10%;
+                top: 30%;
                 padding: 10px 10px;
                 left: 66%;
-                width: 34%;
+                width: 33%;
                 border-radius: 0px;
                 position: absolute;
                 font-size: 1.0rem;
@@ -1606,7 +1650,7 @@ p::first-letter {
                 color: #000000;
                 padding: 0px 0px;
                 width: 100%;
-                font-size: .52rem;
+                font-size: .50rem;
                 z-index: 1;
                 opacity: 100%;
             }
@@ -1706,8 +1750,8 @@ p::first-letter {
                 height: 20px;
                 display: flex;
                 top: 50%;
-                left: 0%;
-                width: 100%;
+                left: 17%;
+                width: 255px;
                 position: absolute;
                 z-index: 2;
             }
