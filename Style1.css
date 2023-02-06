@@ -661,6 +661,7 @@
     color: #fff;
     top: 15%;
     left: 0%;
+    padding: 20px 530px;
     width: 100%;
     position: absolute;
     font-size: 2.2rem;
@@ -672,31 +673,24 @@
 .Text1 {    
     width: 175px;
     left: 510px;
-    height: 60px;
     
 }
 
 .Text2 {    
     width: 100px;
     left: 700px;
-    transform: scale(1.1);
-    height: 60px;
     
 }
 
 .Text3 {    
     width: 200px;
-    scale: 1.1;
     left: 830px;
-    transform: scale(1.1);
-    height: 60px;
     
 }
 
 .Text4 {    
     width: 300px;
     left: 1060px;
-    height: 60px;
 }
 
 p::first-letter {
@@ -1352,16 +1346,22 @@ p::first-letter {
                 z-index: 1;
                 opacity: 90%;
             }
+            
+            .Aboutme_info {
+                top: 41%;
+                height: 125px;
+            }
 
             .About_Whyus {
-                height: 125px;
+                height: 30px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 color: #fff;
-                top: 15%;
+                top: 5%;
                 left: 0%;
                 width: 100%;
+                padding: 0px 30px;
                 position: absolute;
                 font-size: .9rem;
                 box-shadow: 0 8px 16px 0 rgb(0 0 0 / 90%), 0 6px 20px 0 rgb(0 0 0 / 90%);
@@ -1369,10 +1369,95 @@ p::first-letter {
                 opacity: 100%;
             }
 
+            .AboutMe {
+                background-color: #ff8800e6;
+                height: 1119px;
+                width: 100%;
+                position: relative;
+                top: 0px;
+                box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+                z-index: 1;
+            }
+
+            .Aboutme_Intro {
+                background-color: #fff1da;
+                height: 266px;
+                top: 34%;
+                left: 0%;
+                display: flex;
+                width: 100%;
+                position: absolute;
+                font-size: 1.2rem;
+                z-index: 1;
+                /* border-style: solid; */
+                /* border-color: #333333; */
+                /* box-shadow: 0 8px 16px 0 rgb(11 0 20 / 70%), 0 6px 20px 0 rgb(0 0 0 / 70%); */
+                opacity: 100%;
+            }
+
+            .Aboutme_Product_Home {
+                height: 45px;
+                background-image: linear-gradient(rgb(134, 0, 0), rgb(136, 0, 0) 10% 30%, #a10000 50% 70%, #5a0101 90%);
+                color: #ffffff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                line-height: 1.5rem;
+                cursor: pointer;
+                top: 5%;
+                padding: 0px 0px;
+                left: 2%;
+                width: 95px;
+                box-shadow: 0 8px 16px 0 rgb(0 0 0 / 30%), 0 6px 20px 0 rgb(0 0 0 / 30%);
+                border-bottom-right-radius: 10px;
+                border-bottom-Left-radius: 10px;
+                position: absolute;
+                font-size: .9rem;
+                z-index: 1;
+                opacity: 100%;
+            }
+
+            .Aboutme_Product_Discount {
+                height: 45px;
+                background-image: linear-gradient(rgb(134, 0, 0), rgb(136, 0, 0) 10% 30%, #a10000 50% 70%, #5a0101 90%);
+                color: #ffffff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                line-height: 1.5rem;
+                top: 5%;
+                padding: 0px 0px;
+                right: 5%;
+                width: 228px;
+                box-shadow: 0 -1px 58px 0 rgb(0 0 0), 0 6px 20px 0 rgb(0 0 0 / 70%);
+                border-bottom-right-radius: 10px;
+                border-bottom-Left-radius: 10px;
+                position: absolute;
+                font-size: .9rem;
+                z-index: 1;
+                opacity: 100%;
+            }
+
+            .Aboutme_Lower_section {
+                background-image: linear-gradient(rgb(37, 37, 37), rgb(32, 28, 37) 10% 30%, rgb(24, 21, 27) 50% 70%, rgb(23, 21, 26) 90%);
+                height: 470px;
+                bottom: 0%;
+                left: 0%;
+                display: flex;
+                width: 100%;
+                position: absolute;
+                font-size: 1.2rem;
+                z-index: 1;
+                /* border-style: solid; */
+                /* border-color: #333333; */
+                box-shadow: 0 -1px 58px 0 rgb(0 0 0), 0 6px 20px 0 rgb(0 0 0 / 70%);
+                opacity: 100%;
+            }
+
             .About_ThreeBoxes {
                 height: 200px;
                 color: #fff;
-                bottom: 36%;
+                bottom: 50%;
                 left: 0%;
                 padding: 0px 0px;
                 width: 100%;
@@ -1413,8 +1498,8 @@ p::first-letter {
             .About_ThreeBoxes_box1_Text {
                 height: 10%;
                 color: #1f1f1f;
-                padding: 0px 0px;
-                font-size: .7rem;
+                padding: 0px 27px;
+                font-size: .8rem;
                 z-index: 1;
                 opacity: 100%;
             }
@@ -1463,8 +1548,8 @@ p::first-letter {
             .About_ThreeBoxes_box2_Text {
                 height: 10%;
                 color: #1f1f1f;
-                padding: 0px 0px;
-                font-size: .7rem;
+                padding: 0px 34px;
+                font-size: .8rem;
                 z-index: 1;
                 opacity: 100%;
             }
@@ -1500,7 +1585,7 @@ p::first-letter {
                 color: #1f1f1f;
                 padding: 0px 0px;
                 width: 100%;
-                font-size: .6rem;
+                font-size: .8rem;
                 z-index: 1;
                 opacity: 100%;
             }
