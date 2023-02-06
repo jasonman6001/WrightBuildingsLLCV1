@@ -932,6 +932,7 @@ p::first-letter {
 
 .Footer_Help_Text {
     font-size: .9rem;
+    width: ;
 }
 
 .Footer_ContactUs {
@@ -1750,6 +1751,17 @@ p::first-letter {
                 cursor: pointer;
                 box-shadow: 0 0px 3px 0 rgb(255 255 255 / 90%), 0 0px 0px 0 rgb(252 248 248 / 70%);
                 width: 260px;
+                position: absolute;
+                z-index: 2;
+            }
+
+            .Footer_Help {
+                color: rgb(255, 255, 255);
+                height: 24px;
+                display: flex;
+                top: 50%;
+                left: 15%;
+                width: 255px;
                 position: absolute;
                 z-index: 2;
             }
