@@ -1407,6 +1407,19 @@ p::first-letter {
                 height: 125px;
             }
 
+            .Aboutme_Contact_img {
+                height: 250px;
+                top: 3%;
+                right: 3%;
+                display: flex;
+                width: 36%;
+                padding: 20px 20px;
+                position: absolute;
+                font-size: 2.2rem;
+                z-index: 1;
+                opacity: 90%;
+            }
+
             .About_Whyus {
                 height: 30px;
                 display: flex;
