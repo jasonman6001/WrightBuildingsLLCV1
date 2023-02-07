@@ -5,6 +5,56 @@
     font-family: 'Slabo 27px', serif;
 }
 
+.OpenNav_Hidden {
+    width: 27px;
+    position: absolute;
+    height: 40px;
+    left: 90%;
+    top: 50%;
+    color: #f1f1f1;
+    display: none;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1200;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
 .img-eye {
     width: 220px;
     position: absolute;
@@ -93,7 +143,6 @@
     font-size: .8rem;
     text-indent: -1em;
     height: 100%;
-    width: 100%;
     border: none;
     outline: none;
     transition: 0.5s;
@@ -725,7 +774,7 @@ p::first-letter {
     border-radius: 5px;
     position: absolute;
     font-size: 1.0rem;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.4);
+    box-shadow: 5px 0px 6px 0 rgb(255 255 255 / 90%), 0 0px 27px 0 #ffffff;
     z-index: 1;
     opacity: 100%;
 }
@@ -775,7 +824,7 @@ p::first-letter {
     border-radius: 5px;
     position: absolute;
     font-size: 1.0rem;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.4);
+    box-shadow: 5px 0px 6px 0 rgb(255 255 255 / 90%), 0 0px 27px 0 #ffffff;
     z-index: 1;
     opacity: 100%;
 }
@@ -823,7 +872,7 @@ p::first-letter {
     border-radius: 5px;
     position: absolute;
     font-size: 1.0rem;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.4);
+    box-shadow: 5px 0px 6px 0 rgb(255 255 255 / 90%), 0 0px 27px 0 #ffffff;
     z-index: 1;
     opacity: 100%;
 }
@@ -1144,6 +1193,16 @@ p::first-letter {
         transition: 0.5s;
     }
 
+    .OpenNav_Hidden {
+        width: 27px;
+        position: absolute;
+        height: 40px;
+        left: 90%;
+        top: 50%;
+        color: #f1f1f1;
+        display: flex;
+    }
+
     .img-email {
         background-size: 50%;
         width: 20px;
@@ -1182,6 +1241,11 @@ p::first-letter {
         padding: 0 0px;
         opacity: 100%;
     }
+
+    .Aboutme_Contact_img {
+        width: 24%;
+        right: 2%;
+    }
     
     .Nav_Location {
         display: flex;
@@ -1210,6 +1274,30 @@ p::first-letter {
         bottom: 8%;
     }
 
+    .About_ThreeBoxes_box1_Text {
+        height: 10%;
+        color: #1f1f1f;
+        font-size: 1.0rem;
+        z-index: 1;
+        opacity: 100%;
+    }
+
+    .About_ThreeBoxes_box2_Text {
+        height: 10%;
+        color: #1f1f1f;
+        font-size: 1.0rem;
+        z-index: 1;
+        opacity: 100%;
+    }
+
+    .About_ThreeBoxes_box3_Text {
+        height: 10%;
+        color: #1f1f1f;
+        font-size: 1.0rem;
+        z-index: 1;
+        opacity: 100%;
+    }
+
     .Aboutme_info {
         height: 221px;
     }
@@ -1222,7 +1310,7 @@ p::first-letter {
         left: 0%;
         display: flex;
         width: 70%;
-        padding: 10px 60px;
+        padding: 10px 20px;
         position: absolute;
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0,0,0,0.9);
         font-size: 2.0rem;
@@ -1245,6 +1333,11 @@ p::first-letter {
         z-index: 1;
         opacity: 90%;
     }
+
+    .Aboutme_Contact_Text3 {
+        width: 38%;
+    }
+
 
     .About_Whyus {
         padding: 20px 300px;
@@ -1303,9 +1396,33 @@ p::first-letter {
             width: 50%;
         }
 
+        .About_ThreeBoxes_box1_Text {
+            height: 10%;
+            color: #1f1f1f;
+            font-size: .9rem;
+            z-index: 1;
+            opacity: 100%;
+        }
+    
+        .About_ThreeBoxes_box2_Text {
+            height: 10%;
+            color: #1f1f1f;
+            font-size: 0.9rem;
+            z-index: 1;
+            opacity: 100%;
+        }
+    
+        .About_ThreeBoxes_box3_Text {
+            height: 10%;
+            color: #1f1f1f;
+            font-size: .9rem;
+            z-index: 1;
+            opacity: 100%;
+        }
+
     }
 
-        @media only screen and (max-width: 1030px) {
+        @media only screen and (max-width: 1340px) {
             .Aboutme_Contact_Text1 {
                 background-color: #1f1f1f;
                 color: #fff;
@@ -1373,8 +1490,7 @@ p::first-letter {
             }
 
             .About_ThreeBoxes_box1_Text {
-                padding: 6px 33px;
-                font-size: 1rem;
+                font-size: .8rem;
             }
 
             .About_ThreeBoxes_box1_description {
@@ -1383,8 +1499,7 @@ p::first-letter {
             }
 
             .About_ThreeBoxes_box2_Text {
-                padding: 6px 45px;
-                font-size: 1rem;
+                font-size: .8rem;
             }
 
             .About_ThreeBoxes_box2_description {
@@ -1398,8 +1513,8 @@ p::first-letter {
             }
 
             .About_ThreeBoxes_box3_Text {
-                padding: 7px 0px;
-                font-size: 1rem;
+
+                font-size: .8rem;
             }
 
             .Footer_Manu {
@@ -1621,7 +1736,6 @@ p::first-letter {
                 border-radius: 0px;
                 position: absolute;
                 font-size: 1.0rem;
-                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.4);
                 z-index: 1;
                 opacity: 100%;
             }
@@ -1672,7 +1786,6 @@ p::first-letter {
                 border-radius: 0px;
                 position: absolute;
                 font-size: 1.0rem;
-                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.4);
                 z-index: 1;
                 opacity: 100%;
             }
@@ -1721,7 +1834,6 @@ p::first-letter {
                 border-radius: 0px;
                 position: absolute;
                 font-size: 1.0rem;
-                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.4);
                 z-index: 1;
                 opacity: 100%;
             }
@@ -1885,6 +1997,19 @@ p::first-letter {
 
             .Footer_Manu {
                 display: none;
+            }
+
+            .overlay {
+                width: 100%;
+              }
+        }
+
+        @media screen and (max-height: 450px) {
+            .overlay a {font-size: 20px}
+            .overlay .closebtn {
+            font-size: 40px;
+            top: 15px;
+            right: 35px;
             }
         }
 }
