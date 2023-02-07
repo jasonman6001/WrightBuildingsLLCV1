@@ -102,21 +102,21 @@
         </button>
 
         <div class="cards__wrapper">
-          <div class="card current--card">
+          <div class="card current--card" style="z-index: 100;">
             <div class="card__image">
-              <img src="img/Gallery_img10.png" alt="" />
+              <img src="img/Gallery_img05.png" alt="" />
             </div>
           </div>
 
-          <div class="card next--card">
+          <div class="card next--card" style=" z-index: 1;">
             <div class="card__image">
-              <img src="img/Gallery_img11.png" alt="" />
+              <img src="img/Gallery_img08.png" alt="" />
             </div>
           </div>
 
-          <div class="card previous--card">
+          <div class="card previous--card" style=" z-index: 1">
             <div class="card__image">
-              <img src="img/Gallery_img12.png" alt="" />
+              <img src="img/Gallery_img07.png" alt="" />
             </div>
           </div>
         </div>
@@ -160,7 +160,7 @@
           <img src="img/Gallery_img08.png" alt="" />
         </div>
         <div class="app__bg__image previous--image">
-          <img src="img/Gallery_img13.png" alt="" />
+          <img src="img/Gallery_img07.png" alt="" />
         </div>
       </div>
     </div>
@@ -291,47 +291,5 @@
       }
     </script>
 
-    <script>
-      var slideIndex = 1;
-      showDivs(slideIndex);
-
-      function plusDivs(n) {
-        showDivs((slideIndex += n));
-      }
-
-      function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        if (n > x.length) {
-          slideIndex = 1;
-        }
-        if (n < 1) {
-          slideIndex = x.length;
-        }
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        x[slideIndex - 1].style.display = "block";
-      }
-    </script>
-
-    <script>
-      var myIndex = 0;
-      carousel();
-
-      function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        myIndex++;
-        if (myIndex > x.length) {
-          myIndex = 1;
-        }
-        x[myIndex - 1].style.display = "block";
-        setTimeout(carousel, 9000); // Change image every 9 seconds
-      }
-    </script>
   </body>
 </html>
