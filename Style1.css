@@ -58,6 +58,7 @@
 .img-eye {
     width: 220px;
     position: absolute;
+    cursor: pointer;
     top: 10%;
     left: 15%;
     transition: 0.5s;
@@ -111,7 +112,7 @@
     /* height: 140px; */
     position: absolute;
     z-index: 1;
-    bottom: 40%;
+    bottom: 58%;
     left: 3%;
     width: 120px;
     margin-right: auto;
@@ -125,8 +126,8 @@
     /* height: 140px; */
     position: absolute;
     z-index: 1;
-    bottom: 20%;
-    left: 4%;
+    bottom: 47%;
+    left: 3%;
     width: 120px;
     margin-right: auto;
     padding: 0 0px;
@@ -134,44 +135,36 @@
 }
 
 #navbar_logo {
-    background-size: 100%;
-    display: flex;
-    cursor: pointer;
     text-decoration: none;
     color: #fff;
     padding: 0px 0px;
     font-size: .8rem;
-    text-indent: -1em;
-    height: 100%;
     border: none;
     outline: none;
     transition: 0.5s;
 }
 
 #navbar_Email {
-    background-size: 100%;
     display: flex;
     cursor: pointer;
     position: absolute;
-    right: 3%;
-    top: 20%;
+    left: 3%;
+    bottom: 0%;
     text-decoration: none;
     color: #fff;
-    padding: 10px 0px;
-    font-size: 1.0rem;
+    padding: 0px 10px;
+    font-size: 0.8rem;
     /* height: 100%; */
-    height: 41px;
+    height: 25px;
     border: none;
     outline: none;
     transition: 0.5s;
 }
 
 .img-email {
-    background-size: 50%;
-    width: 42px;
-    height: 42px;
+    width: 20px;
+    height: 20px;
     position: absolute;
-    top: 0%;
     right: 100%;
     padding: 0px 0px;
     opacity: 50%;
@@ -1182,30 +1175,30 @@ p::first-letter {
 
 @media only screen and (max-width: 1712px) {
     #navbar_Email {
-        background-size: 100%;
-        display: flex;
-        cursor: pointer;
-        position: absolute;
-        left: 5%;
-        top: 62%;
-        text-decoration: none;
-        color: #fff;
-        width: 235px;
+        /* background-size: 100%; */
+        /* display: flex; */
+        /* cursor: pointer; */
+        /* position: absolute; */
+        top: 70%;
+        /* left: 3%; */
+        /* text-decoration: none; */
+        /* color: #fff; */
+        /* width: 235px; */
         padding: 2px 31px;
         font-size: 0.7rem;
         /* height: 100%; */
-        height: 21px;
-        border: none;
-        outline: none;
-        transition: 0.5s;
+        /* height: 21px; */
+        /* border: none; */
+        /* outline: none; */
+        /* transition: 0.5s; */
     }
 
     .OpenNav_Hidden {
-        width: 27px;
+        width: 10%;
         position: absolute;
-        height: 40px;
+        height: 100%;
         left: 90%;
-        top: 50%;
+        top: 0%;
         color: #f1f1f1;
         display: flex;
     }
@@ -1229,7 +1222,6 @@ p::first-letter {
         position: absolute;
         z-index: 1;
         top: 10%;
-        right: 1%;
         width: 120px;
         margin-right: auto;
         padding: 0 0px;
@@ -1242,7 +1234,6 @@ p::first-letter {
         position: absolute;
         z-index: 1;
         bottom: 55%;
-        right: 1%;
         width: 120px;
         margin-right: auto;
         padding: 0 0px;
@@ -1261,7 +1252,6 @@ p::first-letter {
         position: absolute;
         z-index: 1;
         bottom: 40%;
-        right: 0%;
         width: 120px;
         margin-right: auto;
         padding: 0 0px;
@@ -1272,7 +1262,7 @@ p::first-letter {
         width: 120px;
         position: absolute;
         top: 10%;
-        left: 2%;
+        left: 50%;
         transition: 0.5s;
     }
 
@@ -1533,35 +1523,103 @@ p::first-letter {
 
         @media only screen and (max-width: 750px) {
             .Aboutme_Contact_Text1 {
-                background-color: #1f1f1f;
-                color: #fff;
+                /* background-color: #1f1f1f; */
+                /* color: #fff; */
                 height: 65px;
                 top: 18%;
                 left: 0%;
+                /* display: flex; */
+                width: 58%;
+                padding: 16px 0px;
+                /* position: absolute; */
+                /* box-shadow: 0 8px 16px 0 rgb(0 0 0 / 90%), 0 6px 20px 0 rgb(0 0 0 / 90%); */
+                font-size: .9rem;
+                /* z-index: 1; */
+                /* opacity: 90%; */
+            }
+
+            .Aboutme_Contact {
+                background-image: url(img/MainScreenV3.png);
+                height: 253px;
+                top: 10px;
+                left: 0%;
                 display: flex;
-                width: 70%;
-                padding: 20px 20px;
+                width: 100%;
                 position: absolute;
                 box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0,0,0,0.9);
-                font-size: .9rem;
+                font-size: 1.2rem;
                 z-index: 1;
-                opacity: 90%;
+                opacity: 100%;
             }
 
-            #navbar_Email {
-                right: 35%;
+            .Aboutme_container {
+                background-color: #969696;
+                height: 268px;
+                top: 10px;
+                left: 0%;
+                display: flex;
+                width: 100%;
+                position: absolute;
+                border-style: solid;
+                background-image: linear-gradient(rgb(107, 107, 107),rgb(31, 31, 31));
+                font-size: 1.2rem;
+                z-index: 4;
+                opacity: 100%;
             }
 
-            .Nav_PhoneNumer {
-                left: 41%;
-            }
-
-            .Nav_Location {
-                left: 45%;
+            .img-eye {
+                width: 163px;
+                top: 10%;
+                left: 30%;
             }
 
             .Nav_OpenCloseHours {
-                left: 40%;
+                /* display: flex; */
+                /* justify-content: space-between; */
+                /* height: 140px; */
+                /* position: absolute; */
+                z-index: 1;
+                /* top: 10%; */
+                width: 100px;
+                /* margin-right: auto; */
+                /* padding: 0 0px; */
+                /* opacity: 100%; */
+            }
+
+            .Nav_PhoneNumer {
+                /* display: flex; */
+                /* justify-content: space-between; */
+                /* height: 140px; */
+                /* position: absolute; */
+                z-index: 1;
+                bottom: 55%;
+                width: 101px;
+                /* margin-right: auto; */
+                /* padding: 0 0px; */
+                /* opacity: 100%; */
+            }
+
+            .Nav_Location {
+                /* display: flex; */
+                /* justify-content: space-between; */
+                /* height: 140px; */
+                /* position: absolute; */
+                /* z-index: 1; */
+                bottom: 40%;
+                width: 75px;
+                /* margin-right: auto; */
+                /* padding: 0 0px; */
+                /* opacity: 100%; */
+            }
+
+            .OpenNav_Hidden {
+                width: 20%;
+                position: absolute;
+                height: 100%;
+                left: 79%;
+                top: 0%;
+                color: #f1f1f1;
+                display: flex;
             }
 
             .Aboutme_Contact_Text3 {
@@ -1580,23 +1638,23 @@ p::first-letter {
 
         
             .Aboutme_Contact_Text2 {
-                background-color: #1f1f1f;
-                color: #fff;
-                height: 45px;
-                top: 36%;
+                /* background-color: #1f1f1f; */
+                /* color: #fff; */
+                height: 33px;
+                top: 45%;
                 left: 0%;
-                display: flex;
-                width: 60%;
-                padding: 12px 16px;
-                position: absolute;
-                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0,0,0,0.9);
-                font-size: .9rem;
-                z-index: 1;
-                opacity: 90%;
+                /* display: flex; */
+                width: 65%;
+                padding: 10px 11px;
+                /* position: absolute; */
+                /* box-shadow: 0 8px 16px 0 rgb(0 0 0 / 90%), 0 6px 20px 0 rgb(0 0 0 / 90%); */
+                font-size: 1rem;
+                /* z-index: 1; */
+                /* opacity: 90%; */
             }
             
             .Aboutme_info {
-                top: 41%;
+                top: 33%;
                 height: 125px;
             }
 
@@ -1632,7 +1690,7 @@ p::first-letter {
 
             .AboutMe {
                 background-color: #ff8800e6;
-                height: 1119px;
+                height: 1103px;
                 width: 100%;
                 position: relative;
                 top: 0px;
@@ -1643,7 +1701,7 @@ p::first-letter {
             .Aboutme_Intro {
                 background-color: #fff1da;
                 height: 266px;
-                top: 34%;
+                top: 24%;
                 left: 0%;
                 display: flex;
                 width: 100%;
@@ -1706,7 +1764,7 @@ p::first-letter {
 
             .Aboutme_Lower_section {
                 background-image: linear-gradient(rgb(37, 37, 37), rgb(32, 28, 37) 10% 30%, rgb(24, 21, 27) 50% 70%, rgb(23, 21, 26) 90%);
-                height: 470px;
+                height: 566px;
                 bottom: 0%;
                 left: 0%;
                 display: flex;
@@ -1721,9 +1779,9 @@ p::first-letter {
             }
 
             .About_ThreeBoxes {
-                height: 340px;
+                height: 370px;
                 color: #fff;
-                bottom: 35%;
+                bottom: 39%;
                 left: 0%;
                 padding: 0px 0px;
                 width: 100%;
@@ -1872,7 +1930,7 @@ p::first-letter {
             }
 
             .mySlides {
-                height: 400px;
+                height: 531px;
                 width: 100%;
                 padding: 0px 0px;
                 z-index: 5;
