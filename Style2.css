@@ -156,7 +156,7 @@ button:focus {
   --current-card-rotation-offset: 0;
   --card-translateX-offset: 0;
   --card-rotation-offset: var(--current-card-rotation-offset);
-  --card-scale-offset: 1.2;
+  --card-scale-offset: 1.4;
   --opacity: 0.8;
 }
 .card.previous--card {
@@ -168,7 +168,7 @@ button:focus {
   --card-rotation-offset: -25deg;
 }
 .card.previous--card, .card.next--card {
-  --card-scale-offset: 0.9;
+  --card-scale-offset: 0.8;
   --opacity: 0.4;
 }
 
