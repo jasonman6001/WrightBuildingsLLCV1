@@ -795,7 +795,9 @@ p::first-letter {
 .About_ThreeBoxes_box1_Text {
     height: 10%;
     color: #1f1f1f;
-    padding: 7px 126px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1.5rem;
     z-index: 1;
     opacity: 100%;
@@ -805,10 +807,9 @@ p::first-letter {
     height: 50%;
     background-color: #ffffff;
     color: #000000;
-    top: 220px;
-    padding: 0px 20px;
-    left: 0px;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1.0rem;
     z-index: 1;
     opacity: 100%;
@@ -845,7 +846,9 @@ p::first-letter {
 .About_ThreeBoxes_box2_Text {
     height: 10%;
     color: #1f1f1f;
-    padding: 7px 145px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1.5rem;
     z-index: 1;
     opacity: 100%;
@@ -855,8 +858,9 @@ p::first-letter {
     height: 50%;
     background-color: #ffffff;
     color: #000000;
-    padding: 0px 20px;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1.0rem;
     z-index: 1;
     opacity: 100%;
@@ -893,7 +897,9 @@ p::first-letter {
 .About_ThreeBoxes_box3_Text {
     height: 10%;
     color: #1f1f1f;
-    padding: 7px 82px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1.5rem;
     z-index: 1;
     opacity: 100%;
@@ -903,8 +909,9 @@ p::first-letter {
     height: 50%;
     background-color: #ffffff;
     color: #000000;
-    padding: 0px 20px;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1.0rem;
     z-index: 1;
     opacity: 100%;
@@ -1422,7 +1429,7 @@ p::first-letter {
 
     }
 
-        @media only screen and (max-width: 1340px) {
+        @media only screen and (max-width: 1140px) {
             .Aboutme_Contact_Text1 {
                 background-color: #1f1f1f;
                 color: #fff;
