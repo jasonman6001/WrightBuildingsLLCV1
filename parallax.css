@@ -435,3 +435,12 @@ nav {
     padding: 5px;
   }
 }
+
+@media screen and (orientation: landscape) {
+  body,
+  html {
+    height: 100vh;
+    width: 100vw;
+    overflow: auto;
+  }
+}
