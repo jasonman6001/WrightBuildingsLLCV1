@@ -121,6 +121,7 @@ html {
 
 .button-top {
   padding: 20px 80px;
+  color: black;
 }
 
 .button-right {
@@ -392,6 +393,23 @@ nav {
   .menu-toggle.open ~ .menu {
     animation: slideIn 0.3s forwards;
   }
+
+  .Aboutme_Contact_Text1 h2 {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .Aboutme_Contact_Text1 h3 {
+    font-size: 0.7rem;
+    padding: 10px;
+  }
+
+  .img-layer1 {
+    width: 200px;
+    position: relative;
+    top: 0%;
+    left: 0%;
+  }
 }
 
 /* Apply responsive styles using media queries */
@@ -403,7 +421,8 @@ nav {
   }
 
   .img_blur {
-    align-items: end;
+    align-items: center;
+    padding: 20px 0;
   }
 
   .img-layer1 {
