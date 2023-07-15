@@ -4,6 +4,14 @@
     <title>Your Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="parallax.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
   </head>
   <body>
     <header>
@@ -45,6 +53,19 @@
                 Siding, Roofing, Framing, Remodles, and much more! <br />
                 Work is performed in Southern Illinois and parts of Missouri!
               </h3>
+              <div class="triangle-buttons">
+                <div class="button-top_t">
+                  <a class="button button-top" href="index.html">Services</a>
+                </div>
+                <div class="button-bottom_t">
+                  <a class="button button-left" href="index.html">
+                    <span class="material-symbols-outlined">email</span>
+                  </a>
+                  <a class="button button-right" href="index.html">
+                    <span class="material-symbols-outlined"> smartphone </span>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -116,6 +137,22 @@
         // Remove the "open" class on menuToggle and menu
         menuToggle.classList.remove("open");
         menu.classList.remove("open");
+      }
+    </script>
+    <script>
+      // Get all the buttons with the class "button"
+      const buttons = document.querySelectorAll(".button");
+
+      // Add a click event listener to each button
+      buttons.forEach((button) => {
+        button.addEventListener("click", handleClick);
+      });
+
+      // Function to handle the button click event
+      function handleClick(event) {
+        // Perform the desired action when the button is clicked
+        console.log("Button clicked!");
+        // Add your code here to perform the desired action
       }
     </script>
   </body>
