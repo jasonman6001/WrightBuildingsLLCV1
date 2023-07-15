@@ -455,6 +455,13 @@ nav {
   }
 }
 
+/* Apply responsive styles using media queries */
+@media screen and (max-height: 388px) {
+  .triangle-buttons {
+    display: none;
+  }
+}
+
 @media screen and (orientation: landscape) {
   body,
   html {
