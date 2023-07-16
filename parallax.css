@@ -3,7 +3,6 @@ body,
 html {
   margin: 0;
   padding: 0;
-  height: 1900px;
 }
 
 #parallax {
@@ -59,18 +58,21 @@ html {
   position: relative;
   top: 0%;
   left: 0%;
+  animation: fadeInLeft 1s forwards;
 }
 
 .Aboutme_Contact_Text1 h2 {
   color: #ffffff;
   margin: 0 auto;
   padding: 20px;
+  animation: fadeInLeft 1s forwards;
 }
 
 .Aboutme_Contact_Text1 h3 {
   color: #ffffff;
   margin: 0 auto;
   padding: 20px;
+  animation: fadeInLeft 1s forwards;
 }
 
 .img_blur {
@@ -93,18 +95,20 @@ html {
 }
 
 .button {
-  padding: 20px 20px;
+  padding: 20px 40px;
   margin: 10px;
-  border-radius: 10px;
-  transform: scale(1);
-  background-color: #ccc;
+  border-radius: 40px;
+  background-color: #2196f3;
   color: #fff;
   border: none;
   text-decoration: none;
-  user-select: all;
+  user-select: none;
   cursor: pointer;
-  animation: buttonFadeIn 0.5s ease-in-out forwards;
-  transition: transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .button-top_t {
@@ -121,7 +125,6 @@ html {
 
 .button-top {
   padding: 20px 80px;
-  color: black;
 }
 
 .button-right {
@@ -139,16 +142,15 @@ html {
 }
 
 .button-left span {
-  color: black;
+  color: #fff;
 }
 
 .button-right span {
-  color: black;
+  color: #fff;
 }
 
 .button:hover {
-  color: #0062b3;
-  background-color: #ffffff8f;
+  background-color: #0d6efd;
 }
 
 @keyframes buttonFadeIn {
@@ -266,6 +268,8 @@ nav {
   margin-top: 10px;
   font-size: 0.8rem;
   font-weight: 100;
+  opacity: 0.4;
+  font-style: italic;
   /* Add swipe text styles here */
 }
 
@@ -305,6 +309,39 @@ nav {
   }
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 /* Apply responsive styles using media queries */
 @media screen and (max-width: 768px) {
   .menu {
@@ -339,7 +376,7 @@ nav {
     justify-content: center;
     flex-direction: column;
     border-radius: 20px;
-    padding: 20px;
+    padding: clamp(5px, calc(2vw + 5px), 20px);
     background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
   }
@@ -380,8 +417,8 @@ nav {
 
   .menu.open li a {
     display: block;
-    padding: 10px;
-    font-size: 2rem;
+    padding: clamp(5px, calc(1vw + 5px), 10px);
+    font-size: clamp(14px, calc(0.8rem + 1.5vw), 24px);
     color: #ffffff;
     text-align: center;
   }
@@ -397,11 +434,13 @@ nav {
   .Aboutme_Contact_Text1 h2 {
     font-size: 1rem;
     padding: 10px;
+    animation: fadeInUp 1s forwards;
   }
 
   .Aboutme_Contact_Text1 h3 {
     font-size: 0.7rem;
     padding: 10px;
+    animation: fadeInUp 1s forwards;
   }
 
   .img-layer1 {
@@ -409,6 +448,7 @@ nav {
     position: relative;
     top: 0%;
     left: 0%;
+    animation: fadeInLeft 1s forwards;
   }
 }
 
@@ -459,13 +499,5 @@ nav {
 @media screen and (max-height: 388px) {
   .triangle-buttons {
     display: none;
-  }
-}
-
-@media screen and (orientation: landscape) {
-  body,
-  html {
-    height: 100vh;
-    width: 100vw;
   }
 }
