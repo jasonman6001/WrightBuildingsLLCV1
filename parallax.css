@@ -3,7 +3,6 @@ body,
 html {
   margin: 0;
   padding: 0;
-  background-color: rgba(255, 0, 0, 0.411);
 }
 
 #parallax {
@@ -44,6 +43,7 @@ html {
   height: 100vh;
   margin: 0 auto;
   padding: 40px;
+  z-index: 1;
   box-shadow: 0 0px 47px 0 rgba(0, 0, 0, 1), 0 0px 185px 0 rgba(0, 0, 0, 1);
   background-color: rgba(255, 255, 255, 1);
 }
@@ -59,21 +59,25 @@ html {
   position: relative;
   top: 0%;
   left: 0%;
-  animation: fadeInLeft 1s forwards;
+  animation: fadeInLeft 3s forwards;
 }
 
 .Aboutme_Contact_Text1 h2 {
   color: #ffffff;
   margin: 0 auto;
+  text-shadow: 0px 0px 6px rgb(0 0 0);
   padding: 20px;
-  animation: fadeInLeft 1s forwards;
+  font-size: clamp(1.3rem, -1.5rem + 8vw, 3rem);
+  animation: fadeInLeft 2s forwards;
 }
 
 .Aboutme_Contact_Text1 h3 {
   color: #ffffff;
   margin: 0 auto;
+  font-size: clamp(0.9rem, -1.5rem + 8vw, 1.5rem);
+  text-shadow: 0px 0px 6px rgb(0 0 0);
   padding: 20px;
-  animation: fadeInLeft 1s forwards;
+  animation: fadeInLeft 3s forwards;
 }
 
 .img_blur {
@@ -116,16 +120,19 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: fadeInLeft 1s forwards;
 }
 
 .button-bottom_t {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: fadeInLeft 2s forwards;
 }
 
 .button-top {
   padding: 20px 80px;
+  animation: light-effect 2s ease-in-out infinite;
 }
 
 .button-right {
@@ -152,6 +159,21 @@ html {
 
 .button:hover {
   background-color: #0d6efd;
+}
+
+@keyframes light-effect {
+  0% {
+    opacity: 0.7;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 0.7;
+    transform: scale(0.8);
+  }
 }
 
 @keyframes buttonFadeIn {
@@ -433,15 +455,11 @@ nav {
   }
 
   .Aboutme_Contact_Text1 h2 {
-    font-size: 1rem;
     padding: 10px;
-    animation: fadeInUp 1s forwards;
   }
 
   .Aboutme_Contact_Text1 h3 {
-    font-size: 0.7rem;
     padding: 10px;
-    animation: fadeInUp 1s forwards;
   }
 
   .img-layer1 {
@@ -454,7 +472,7 @@ nav {
 }
 
 /* Apply responsive styles using media queries */
-@media screen and (max-height: 568px) {
+@media screen and (max-height: 650px) {
   .Aboutme_Contact_Text1 {
     position: relative;
     text-align: center;
