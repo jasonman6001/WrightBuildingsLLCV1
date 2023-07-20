@@ -41,11 +41,12 @@ html {
 .content-container {
   position: relative;
   height: 100vh;
-  margin: 0 auto;
-  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 1;
   box-shadow: 0 0px 47px 0 rgba(0, 0, 0, 1), 0 0px 185px 0 rgba(0, 0, 0, 1);
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #f9f9f9;
 }
 
 .Aboutme_Contact_Text1 {
@@ -65,7 +66,7 @@ html {
 .Aboutme_Contact_Text1 h2 {
   color: #ffffff;
   margin: 0 auto;
-  text-shadow: 0px 0px 6px rgb(0 0 0);
+  text-shadow: 0px 0px 26px rgb(0, 0, 0);
   padding: 20px;
   font-size: clamp(1.3rem, -1.5rem + 8vw, 3rem);
   animation: fadeInLeft 2s forwards;
@@ -75,9 +76,31 @@ html {
   color: #ffffff;
   margin: 0 auto;
   font-size: clamp(0.9rem, -1.5rem + 8vw, 1.5rem);
-  text-shadow: 0px 0px 6px rgb(0 0 0);
+  text-shadow: 0px 0px 26px rgb(0, 0, 0);
   padding: 20px;
   animation: fadeInLeft 3s forwards;
+}
+
+/* CSS for the separate container */
+.container {
+  opacity: 0; /* Initially set opacity to 0 */
+  transform: translateY(50px); /* Initially move the container downward */
+  transition: opacity 1s ease, transform 0.5s ease; /* Add transitions for opacity and transform */
+  /* Add your desired styles for the container */
+}
+
+.container.show {
+  opacity: 1; /* Set opacity to 1 when the container is visible */
+  transform: translateY(0); /* Move the container to its original position */
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 0px 47px 0 rgb(255, 255, 255), 0 0px 185px rgb(255, 255, 255);
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
 
 .img_blur {
@@ -233,6 +256,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  backdrop-filter: blur(5px);
 }
 
 .logo img {
@@ -518,5 +542,22 @@ nav {
 @media screen and (max-height: 388px) {
   .triangle-buttons {
     display: none;
+  }
+
+  .img-layer1 {
+    width: 150px;
+    position: relative;
+    top: 0%;
+    left: 0%;
+  }
+
+  .Aboutme_Contact_Text1 h2 {
+    font-size: 1.1rem;
+    padding: 10px;
+  }
+
+  .Aboutme_Contact_Text1 h3 {
+    font-size: 0.9rem;
+    padding: 10px;
   }
 }

@@ -74,7 +74,9 @@
           </div>
         </div>
         <div class="content-container">
-          <!-- Your content for Layer 1 goes here -->
+          <div class="container" data-trigger="400">
+            <!-- Your content for the separate container goes here -->
+          </div>
         </div>
       </div>
       <div class="parallax-section">
@@ -82,7 +84,9 @@
           <div class="img_blur"></div>
         </div>
         <div class="content-container">
-          <!-- Your content for Layer 2 goes here -->
+          <div class="container" data-trigger="1000">
+            <!-- Container 2 content goes here -->
+          </div>
         </div>
       </div>
       <div class="parallax-section">
@@ -90,7 +94,9 @@
           <div class="img_blur"></div>
         </div>
         <div class="content-container">
-          <!-- Your content for Layer 3 goes here -->
+          <div class="container" data-trigger="1500">
+            <!-- Container 3 content goes here -->
+          </div>
         </div>
       </div>
     </div>
@@ -158,6 +164,33 @@
         console.log("Button clicked!");
         // Add your code here to perform the desired action
       }
+    </script>
+    <script>
+      // Function to handle the visibility of containers using Intersection Observer API
+      function handleIntersection(entries, observer) {
+        entries.forEach((entry) => {
+          if (
+            entry.isIntersecting &&
+            !entry.target.classList.contains("show")
+          ) {
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target);
+          }
+        });
+      }
+
+      // Create an observer to watch for the containers entering the viewport
+      var observer = new IntersectionObserver(handleIntersection, {
+        threshold: 0.2,
+      });
+
+      // Get all the container elements
+      var containers = document.querySelectorAll(".container");
+
+      // Observe each container
+      containers.forEach((container) => {
+        observer.observe(container);
+      });
     </script>
   </body>
 </html>
