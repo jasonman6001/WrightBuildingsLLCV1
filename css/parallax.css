@@ -544,15 +544,15 @@ html {
 /* Media Query for viewport width of 768px and below */
 @media (max-width: 968px) {
   .layer-1 {
-    background-image: url("img/Section_9.jpg");
+    background-image: url("../img/Section_9.jpg");
   }
 
   .layer-2 {
-    background-image: url("img/Section_7.jpg");
+    background-image: url("../img/Section_7.jpg");
   }
 
   .layer-3 {
-    background-image: url("img/Section_8.jpg");
+    background-image: url("../img/Section_8.jpg");
   }
 }
 

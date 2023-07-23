@@ -41,7 +41,7 @@ ul {
 }
 
 .container1_list {
-  width: 1600px; /* Set a fixed width for the container */
+  max-width: 1600px; /* Set a fixed width for the container */
   height: 80%;
   display: block;
   flex-direction: column;
