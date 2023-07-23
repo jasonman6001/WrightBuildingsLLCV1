@@ -28,15 +28,15 @@ html {
 }
 
 .layer-1 {
-  background-image: url("img/Section_3.png");
+  background-image: url("../img/Section_3.png");
 }
 
 .layer-2 {
-  background-image: url("img/Section_5.png");
+  background-image: url("../img/Section_5.png");
 }
 
 .layer-3 {
-  background-image: url("img/Gallery_img05.png");
+  background-image: url("../img/Gallery_img05.png");
 }
 
 .content-container {
