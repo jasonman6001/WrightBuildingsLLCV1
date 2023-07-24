@@ -215,6 +215,41 @@ html {
   }
 }
 
+.container2_wrapper {
+  flex: 1 1 100%;
+  max-width: 100%;
+  padding: 20px;
+  gap: 20px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+.container2_sep {
+  position: relative;
+  display: flex;
+  gap: 10px;
+}
+
+.container2_wrapper .material-symbols-outlined {
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 10px;
+  user-select: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.726), 0 2px 4px rgba(0, 0, 0, 0.06);
+  text-shadow: 0px 0px 6px rgb(0, 0, 0);
+  background-color: #e17013;
+  font-size: clamp(2.5rem, 0.1rem + 0.96vw, 3.6rem);
+}
+
+.container2_wrapper .material-symbols-outlined:hover {
+  color: #000000;
+  border-radius: 50%;
+  background-color: #e17013c0;
+}
+
 .carousel_wrapper {
   flex: 1 1 100%;
   max-width: 100%;

@@ -89,40 +89,177 @@ ul {
 /* Content section styles */
 .content-section {
   display: flex;
-  flex-wrap: wrap;
-  overflow: hidden;
   justify-content: center;
   gap: 20px;
-  max-width: 100%; /* Adjust the width as needed */
+  max-width: 100%;
+  flex-wrap: wrap; /* Allow items to wrap if needed */
 }
 
 .content {
-  flex: 1 1 100%; /* Adjust the width of content items */
-  width: 100%;
-  padding: 30px;
-  border-radius: 12px;
-  background-color: #ffffff;
-  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1);
-}
-
-.section3_content {
-  width: 100%;
-  display: flex;
-  gap: 15px;
-  margin: 0;
-  padding: 0;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex: 1 1 100%; /* Adjust the width of content items */
-}
-
-.section3_content img {
-  flex: 5 2 100px; /* Adjust the width of content items */
   position: relative;
-  min-width: 10%;
-  min-height: 10%;
-  height: 160px;
-  width: 200px;
+  width: 1600px; /* Set the initial width for each content */
+  overflow: hidden;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  transition: width 0.3s;
+  box-sizing: border-box;
+}
+
+.content h2 {
+  margin-top: 0;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  background-color: #d65f10;
+  color: #ffffff;
+}
+
+.content p {
+  margin: 0;
+  padding: 10px;
+}
+
+/* Details styles */
+.details {
+  position: absolute;
+  display: flex;
+  bottom: 0%;
+  max-height: 0;
+  color: #333333;
+  padding: 10px;
+  overflow: hidden;
+  transition: max-height 0.3s;
+}
+
+.content.active {
+  width: 900px; /* Adjust the expanded width as needed */
+}
+
+.details.active {
+  color: #ffffff;
+  overflow: hidden;
+  display: flex;
+  max-width: 700px;
+  max-height: 190px;
+}
+
+.details.active p {
+  color: #ffffff;
+  overflow: hidden;
+  display: flex;
+  text-shadow: 0px 3px 6px rgb(0, 0, 0);
+}
+
+/* Image container styles */
+.image-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+  width: 70px; /* Set the width for each thumbnail image */
+  height: 230px;
+  transition: width 1s;
+}
+
+.image-container:hover {
+  transform: scale(1.01); /* Increase the scale slightly on hover */
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+  transition: transform 0.3s, width 0.3s; /* Add transition for both transform and width */
+}
+
+.image-container h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  writing-mode: horizontal-tb; /* For browser support, if needed */
+  text-orientation: upright; /* For browser support, if needed */
+  white-space: nowrap; /* Prevent text from wrapping */
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 16px; /* Adjust font size as needed */
+  transition: transform 0.3s, width 0.6s; /* Add transition for both transform and width */
+  text-shadow: 0px 3px 6px rgb(0, 0, 0);
+  color: #ffffff;
+  z-index: 1;
+}
+
+.image-container.active h2 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  writing-mode: vertical-lr; /* For browser support, if needed */
+  text-orientation: sideways; /* For browser support, if needed */
+  white-space: nowrap; /* Prevent text from wrapping */
+  margin: 0;
+  font-size: 16px; /* Adjust font size as needed */
+  color: #ffffff;
+  z-index: 1;
+}
+
+/* Active state styles */
+.image-container.active {
+  width: 100%; /* Expand the width when active */
+  z-index: 1; /* Make the active image appear on top of others */
+}
+
+.image-container.active img {
+  transform: scale(1); /* Reset the scale to normal size */
+}
+
+/* Styles for section3_content */
+.section3_content {
+  display: flex;
+  justify-content: center;
+}
+
+.details_button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-height: 0;
+  font-size: clamp(0.5rem, 0.1rem + 0.96vw, 0.7rem);
+  text-shadow: 0px 0px 6px rgb(0, 0, 0);
+  color: #ccc;
+  background-color: #d65f10d7;
+  text-decoration: none;
+  box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.2), 0 0px 2px 0 rgba(0, 0, 0, 0.19);
+}
+
+.details_button.active {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  max-height: 100px;
+  padding: 10px 20px;
+  font-size: clamp(0.5rem, 0.1rem + 0.96vw, 0.7rem);
+  text-shadow: 0px 0px 6px rgb(0, 0, 0);
+  color: #ffffff;
+  background-color: #d65f10d7;
+  text-decoration: none;
+  box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.2), 0 0px 2px 0 rgba(0, 0, 0, 0.19);
+}
+
+.details_button.active:hover {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  max-height: 100px;
+  padding: 10px 20px;
+  font-size: clamp(0.5rem, 0.1rem + 0.96vw, 0.7rem);
+  text-shadow: 0px 0px 6px rgb(0, 0, 0);
+  color: #ffffff;
+  background-color: #d65f10;
+  text-decoration: none;
+  box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.2), 0 0px 2px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Styles for heading and paragraphs */
