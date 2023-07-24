@@ -16,6 +16,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
@@ -138,14 +142,122 @@
                   <div class="content" id="section3" data-item="3">
                     <h2>Pricing</h2>
                     <div class="section3_content">
-                      <img src="img/Gallery3.png" alt="Image 1" />
-                      <img src="img/Gallery3.png" alt="Image 1" />
-                      <img src="img/Gallery3.png" alt="Image 1" />
-                      <img src="img/Gallery3.png" alt="Image 1" />
+                      <div class="image-container">
+                        <div class="light-effect"></div>
+                        <img
+                          src="img/Accordion_img1.png"
+                          alt="Image 1"
+                          class="thumbnail"
+                        />
+                        <h2>Steel Buildings</h2>
+                        <div class="details">
+                          <p>
+                            For clients seeking strength, durability, and
+                            versatility, our steel buildings are the ideal
+                            solution. These structures are designed using
+                            high-quality steel components, ensuring exceptional
+                            strength and resistance to harsh weather conditions.
+                            Whether you need a warehouse, industrial facility,
+                            or commercial building, our steel buildings are
+                            engineered to meet your specific requirements.
+                          </p>
+                        </div>
+                        <a class="details_button" href="index.html"
+                          >REQUEST A QUOTE
+                        </a>
+                      </div>
+                      <div class="image-container">
+                        <img
+                          src="img/Accordion_img2.png"
+                          alt="Image 2"
+                          class="thumbnail"
+                        />
+                        <h2>New Construction Homes</h2>
+                        <div class="details">
+                          <p>
+                            At Wright Buildings LLC, we specialize in building
+                            exceptional new construction and custom homes
+                            tailored to your unique vision and requirements.
+                            Whether you have specific architectural designs in
+                            mind or need assistance in creating a customized
+                            home plan, our team of experienced professionals is
+                            here to bring your dream home to life.
+                          </p>
+                        </div>
+                        <a class="details_button" href="index.html"
+                          >REQUEST A QUOTE
+                        </a>
+                      </div>
+                      <div class="image-container">
+                        <img
+                          src="img/Accordion_img3.png"
+                          alt="Image 3"
+                          class="thumbnail"
+                        />
+                        <h2>Post Frame Buiidlings</h2>
+                        <div class="details">
+                          <p>
+                            If you're in need of a durable and versatile
+                            structure, our post frame buildings are an excellent
+                            choice. These buildings are constructed with post
+                            frame construction techniques, allowing for quick
+                            and efficient assembly without compromising on
+                            quality. Whether you require a storage facility,
+                            agricultural building, or commercial space, our post
+                            frame buildings offer excellent value for your
+                            investment.
+                          </p>
+                        </div>
+                        <a class="details_button" href="index.html"
+                          >REQUEST A QUOTE
+                        </a>
+                      </div>
+                      <div class="image-container">
+                        <img
+                          src="img/Accordion_img4.png"
+                          alt="Image 4"
+                          class="thumbnail"
+                        />
+                        <h2>Remodles</h2>
+                        <div class="details">
+                          <p>
+                            Enhance the functionality and aesthetics of your
+                            existing space with our professional remodeling
+                            services. Whether you're looking to renovate your
+                            kitchen, bathroom, office, or any other area, our
+                            experienced team will work closely with you to
+                            understand your vision and deliver outstanding
+                            results.
+                          </p>
+                        </div>
+                        <a class="details_button" href="index.html"
+                          >REQUEST A QUOTE
+                        </a>
+                      </div>
                     </div>
                   </div>
                   <!-- Add more content divs for additional items -->
                 </div>
+              </div>
+            </div>
+            <div class="container2_wrapper">
+              <div class="container2_sep">
+                <span class="material-symbols-outlined"> contract </span>
+                <h3>Request a Quote</h3>
+              </div>
+              <div class="container2_sep">
+                <span class="material-symbols-outlined"> account_balance </span>
+                <h3>Work With Lenders</h3>
+              </div>
+              <div class="container2_sep">
+                <span class="material-symbols-outlined"> handyman </span>
+                <h3>Start the Build</h3>
+              </div>
+              <div class="container2_sep">
+                <span class="material-symbols-outlined">
+                  real_estate_agent
+                </span>
+                <h3>Deliver Your Dream</h3>
               </div>
             </div>
             <div class="carousel_wrapper">
@@ -368,6 +480,35 @@
           $(this).addClass("active"); // Add active class to the clicked item
           $(".content").hide(); // Hide all content sections
           $("#section" + section).show(); // Show the clicked section
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        // Set the first image-container as active by default
+        $(".image-container").first().addClass("active");
+        $(".image-container.active .details").addClass("active");
+        $(".image-container.active .details_button").addClass("active");
+
+        $(".image-container").click(function () {
+          const isActive = $(this).hasClass("active");
+
+          // Check if there is more than one image-container with the 'active' class
+          const activeContainers = $(".image-container.active");
+          const isLastActive =
+            activeContainers.length === 1 && $(this).hasClass("active");
+
+          if (!isLastActive) {
+            $(".image-container").removeClass("active");
+            $(".details").removeClass("active");
+            $(".details_button").removeClass("active");
+
+            if (!isActive) {
+              $(this).addClass("active");
+              $(this).find(".details").addClass("active");
+              $(this).find(".details_button").addClass("active");
+            }
+          }
         });
       });
     </script>
