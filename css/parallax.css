@@ -44,6 +44,7 @@ html {
   height: 100vh;
   min-height: 1200px;
   display: flex;
+  overflow: hidden;
   justify-content: center;
   align-items: center;
   z-index: 1;
