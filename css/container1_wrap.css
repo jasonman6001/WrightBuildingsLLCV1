@@ -124,10 +124,63 @@ ul {
 .details {
   position: absolute;
   display: flex;
-  bottom: 0%;
+  bottom: 10%;
   max-height: 0;
   color: #333333;
   padding: 10px;
+  overflow: hidden;
+  transition: max-height 0.3s;
+}
+
+/* Details styles */
+.details_Title {
+  position: relative;
+  display: flex;
+  bottom: 10%;
+  max-height: 0;
+  color: #333333;
+  padding: 10px;
+  overflow: hidden;
+  transition: max-height 0.3s;
+}
+
+/* Details styles */
+.details.active .details_Title {
+  position: relative;
+  display: flex;
+  bottom: 0%;
+  max-height: 100px;
+  text-shadow: 0px 3px 6px rgb(0, 0, 0);
+  font-size: clamp(0.4rem, 0.1rem + 0.96vw, 1.2rem);
+  color: #ffffff;
+  overflow: hidden;
+  transition: max-height 0.3s;
+}
+
+/* Details styles */
+.details.active .details_Title h1 {
+  margin: 0;
+}
+
+/* Details styles */
+.details_disricption {
+  position: relative;
+  display: flex;
+  bottom: 10%;
+  max-height: 0;
+  color: #333333;
+  overflow: hidden;
+  transition: max-height 0.3s;
+}
+
+/* Details styles */
+.details.active .details_disricption {
+  position: relative;
+  display: flex;
+  bottom: 0%;
+  max-height: 180px;
+  color: #ffffff;
+  text-shadow: 0px 3px 6px rgb(0, 0, 0);
   overflow: hidden;
   transition: max-height 0.3s;
 }
@@ -138,16 +191,26 @@ ul {
 
 .details.active {
   color: #ffffff;
+  position: absolute;
   overflow: hidden;
   display: flex;
-  max-width: 700px;
-  max-height: 190px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  bottom: 0%;
+  padding: 0px;
+  max-height: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .details.active p {
   color: #ffffff;
   overflow: hidden;
   display: flex;
+  padding: 20px;
+  font-size: clamp(0.6rem, 0.1rem + 0.96vw, 1rem);
   text-shadow: 0px 3px 6px rgb(0, 0, 0);
 }
 
@@ -157,13 +220,18 @@ ul {
   overflow: hidden;
   cursor: pointer;
   user-select: none;
-  width: 70px; /* Set the width for each thumbnail image */
-  height: 230px;
-  transition: width 1s;
+  border: 2px solid rgb(255, 255, 255);
+  background-size: cover;
+  object-fit: cover;
+  image-rendering: optimizeQuality;
+  background-repeat: no-repeat;
+  width: 270px; /* Set the width for each thumbnail image */
+  height: 270px;
+  transition: width 1.4s;
 }
 
 .image-container:hover {
-  transform: scale(1.01); /* Increase the scale slightly on hover */
+  transform: scale(1); /* Increase the scale slightly on hover */
 }
 
 .image-container img {
@@ -178,13 +246,13 @@ ul {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(90deg);
+  transform: translate(-50%, -50%) rotate(0deg);
   writing-mode: horizontal-tb; /* For browser support, if needed */
-  text-orientation: upright; /* For browser support, if needed */
-  white-space: nowrap; /* Prevent text from wrapping */
+  text-orientation: sideways; /* For browser support, if needed */
+  white-space: normal; /* Prevent text from wrapping */
   margin: 0;
   background-color: rgba(255, 255, 255, 0);
-  font-size: 16px; /* Adjust font size as needed */
+  font-size: clamp(0.7rem, 0.1rem + 0.96vw, 1rem);
   transition: transform 0.3s, width 0.6s; /* Add transition for both transform and width */
   text-shadow: 0px 3px 6px rgb(0, 0, 0);
   color: #ffffff;
@@ -192,15 +260,13 @@ ul {
 }
 
 .image-container.active h2 {
-  position: absolute;
-  top: 10%;
-  left: 50%;
   transform: translate(-50%, -50%) rotate(-90deg);
   writing-mode: vertical-lr; /* For browser support, if needed */
   text-orientation: sideways; /* For browser support, if needed */
   white-space: nowrap; /* Prevent text from wrapping */
+  display: none;
   margin: 0;
-  font-size: 16px; /* Adjust font size as needed */
+  font-size: clamp(0.6rem, 0.1rem + 0.96vw, 2rem);
   color: #ffffff;
   z-index: 1;
 }
@@ -209,6 +275,7 @@ ul {
 .image-container.active {
   width: 100%; /* Expand the width when active */
   z-index: 1; /* Make the active image appear on top of others */
+  object-fit: unset;
 }
 
 .image-container.active img {
@@ -226,6 +293,13 @@ ul {
   right: 0;
   bottom: 0;
   max-height: 0;
+}
+
+.details_button a {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-height: 0;
   font-size: clamp(0.5rem, 0.1rem + 0.96vw, 0.7rem);
   text-shadow: 0px 0px 6px rgb(0, 0, 0);
   color: #ccc;
@@ -234,10 +308,8 @@ ul {
   box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.2), 0 0px 2px 0 rgba(0, 0, 0, 0.19);
 }
 
-.details_button.active {
-  position: absolute;
-  right: 5px;
-  bottom: 5px;
+.details_button.active a {
+  position: relative;
   max-height: 100px;
   padding: 10px 20px;
   font-size: clamp(0.5rem, 0.1rem + 0.96vw, 0.7rem);
@@ -248,18 +320,93 @@ ul {
   box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.2), 0 0px 2px 0 rgba(0, 0, 0, 0.19);
 }
 
-.details_button.active:hover {
+.details_button.active {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 25%;
+  width: 100%;
+  transition: transform 0.3s, width 0.6s; /* Add transition for both transform and width */
+}
+
+.image-container .overlay1 {
+  background-color: #00000096;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
   position: absolute;
-  right: 5px;
-  bottom: 5px;
-  max-height: 100px;
-  padding: 10px 20px;
-  font-size: clamp(0.5rem, 0.1rem + 0.96vw, 0.7rem);
-  text-shadow: 0px 0px 6px rgb(0, 0, 0);
-  color: #ffffff;
-  background-color: #d65f10;
-  text-decoration: none;
-  box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.2), 0 0px 2px 0 rgba(0, 0, 0, 0.19);
+  bottom: 0%;
+  transition: transform 0.3s, width 0.6s; /* Add transition for both transform and width */
+}
+
+.image-container.active .overlay1 {
+  background-color: #00000096;
+  width: 100%;
+  max-height: 100%;
+  z-index: 1;
+  position: absolute;
+  bottom: 0%;
+  transition: transform 0.3s, width 0.6s; /* Add transition for both transform and width */
+}
+
+.image-container .overlay2 {
+  background-color: #00000096;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  bottom: 0%;
+  transition: transform 0.3s, width 0.6s; /* Add transition for both transform and width */
+}
+
+.image-container.active .overlay2 {
+  background-color: #00000096;
+  width: 100%;
+  max-height: 100%;
+  z-index: 1;
+  position: absolute;
+  bottom: 0%;
+  transition: transform 0.3s, width 0.6s; /* Add transition for both transform and width */
+}
+
+.image-container .overlay3 {
+  background-color: #00000096;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  bottom: 0%;
+  transition: transform 0.3s, width 0.6s; /* Add transition for both transform and width */
+}
+
+.image-container.active .overlay3 {
+  background-color: #00000096;
+  width: 100%;
+  max-height: 100%;
+  z-index: 1;
+  position: absolute;
+  bottom: 0%;
+  transition: transform 0.3s, width 0.6s; /* Add transition for both transform and width */
+}
+
+.image-container .overlay4 {
+  background-color: #00000096;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  bottom: 0%;
+  transition: transform 0.3s, width 0.6s; /* Add transition for both transform and width */
+}
+
+.image-container.active .overlay4 {
+  background-color: #00000096;
+  width: 100%;
+  max-height: 100%;
+  z-index: 1;
+  position: absolute;
+  bottom: 0%;
 }
 
 /* Styles for heading and paragraphs */
@@ -284,10 +431,89 @@ p {
   color: #666666;
 }
 
+/* Define the background image URL for the first image-container */
+#image-container-1 {
+  background-image: url("../img/Accordion_img1.png");
+}
+
+/* Define the background image URL for the first image-container */
+#image-container-2 {
+  background-image: url("../img/Accordion_img2.png");
+}
+
+/* Define the background image URL for the first image-container */
+#image-container-3 {
+  background-image: url("../img/Accordion_img3.png");
+}
+
+/* Define the background image URL for the first image-container */
+#image-container-4 {
+  background-image: url("../img/Accordion_img4.png");
+}
+
 @media screen and (max-width: 768px) {
   /* Overall layout styles */
   .container1_wrapper {
     width: 100%;
     height: unset;
+  }
+
+  .image-container h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    writing-mode: horizontal-tb;
+    text-orientation: sideways;
+    white-space: nowrap;
+    flex-wrap: wrap;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: clamp(0.7rem, 0.1rem + 0.96vw, 1rem);
+    transition: transform 0.3s, width 0.6s;
+    text-shadow: 0px 3px 6px rgb(0, 0, 0);
+    color: #ffffff;
+    z-index: 1;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+    transition: transform 0.3s, width 0.3s; /* Add transition for both transform and width */
+  }
+
+  .image-container.active img {
+    width: 100%;
+    height: 100%;
+    object-fit: unset;
+    filter: brightness(0.5);
+    transition: transform 0.3s, width 0.3s; /* Add transition for both transform and width */
+  }
+
+  .image-container {
+    width: 70px; /* Set the width for each thumbnail image */
+    background-position: cover;
+  }
+
+  /* Define the background image URL for the first image-container */
+  #image-container-1 {
+    background-image: url("../img/Accordion_img1_small.png");
+  }
+
+  /* Define the background image URL for the first image-container */
+  #image-container-2 {
+    background-image: url("../img/Accordion_img2_small.png");
+  }
+
+  /* Define the background image URL for the first image-container */
+  #image-container-3 {
+    background-image: url("../img/Accordion_img3_small.png");
+  }
+
+  /* Define the background image URL for the first image-container */
+  #image-container-4 {
+    background-image: url("../img/Accordion_img4_small.png");
   }
 }
