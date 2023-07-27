@@ -32,7 +32,7 @@ ul {
   position: relative;
   color: #ffffff;
   overflow: hidden;
-  font-size: clamp(0.8rem, 0.1rem + 0.96vw, 2rem);
+  font-size: clamp(1.2rem, 0.1rem + 0.96vw, 2rem);
   text-shadow: 0px 3px 6px rgb(0, 0, 0);
   margin: 0 auto;
 }
@@ -74,7 +74,7 @@ ul {
   color: #ffffff;
   text-shadow: 0px 3px 6px rgb(0, 0, 0);
   cursor: pointer;
-  font-size: clamp(0.6rem, 0.1rem + 0.96vw, 2rem);
+  font-size: clamp(0.9rem, 0.1rem + 0.96vw, 2rem);
   font-weight: bold;
   user-select: none;
   overflow: hidden;
@@ -85,10 +85,12 @@ ul {
 
 .item.active {
   color: #e17013; /* Style for active item */
+  text-shadow: 0px 0px 4px rgb(0, 0, 0);
 }
 
 .item:hover {
   color: #e17013;
+  text-shadow: 0px 0px 4px rgb(0, 0, 0);
 }
 
 /* Content section styles */
@@ -104,6 +106,7 @@ ul {
 .content {
   position: relative;
   width: 1600px; /* Set the initial width for each content */
+  height: 360px;
   overflow: hidden;
   padding: 10px;
   border: 1px solid #ccc;
@@ -118,7 +121,7 @@ ul {
   padding: 10px;
   text-align: center;
   overflow: hidden;
-  background-color: #d65f10;
+  background-image: linear-gradient(to bottom, #d65f10, #ca5100);
   color: #ffffff;
 }
 
@@ -227,14 +230,14 @@ ul {
   overflow: hidden;
   cursor: pointer;
   user-select: none;
-  border: 2px solid rgb(255, 255, 255);
+  border: 1px solid rgb(87 87 87);
   background-size: cover;
   object-fit: cover;
   image-rendering: optimizeQuality;
   background-repeat: no-repeat;
   width: 270px; /* Set the width for each thumbnail image */
   height: 270px;
-  transition: width 1.4s;
+  transition: width 0.3s;
 }
 
 .image-container:hover {
@@ -258,7 +261,7 @@ ul {
   text-orientation: sideways; /* For browser support, if needed */
   white-space: normal; /* Prevent text from wrapping */
   margin: 0;
-  background-color: rgba(255, 255, 255, 0);
+  background-image: linear-gradient(to bottom, #d65f1000, #ca510000);
   font-size: clamp(0.7rem, 0.1rem + 0.96vw, 1rem);
   transition: transform 0.3s, width 0.6s; /* Add transition for both transform and width */
   text-shadow: 0px 3px 6px rgb(0, 0, 0);
@@ -310,7 +313,7 @@ ul {
   font-size: clamp(0.5rem, 0.1rem + 0.96vw, 0.7rem);
   text-shadow: 0px 0px 6px rgb(0, 0, 0);
   color: #ccc;
-  background-color: #d65f10d7;
+  background-image: linear-gradient(to bottom, #a73d00, #ca5100);
   text-decoration: none;
   box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.2), 0 0px 2px 0 rgba(0, 0, 0, 0.19);
 }
@@ -322,7 +325,7 @@ ul {
   font-size: clamp(0.5rem, 0.1rem + 0.96vw, 0.7rem);
   text-shadow: 0px 0px 6px rgb(0, 0, 0);
   color: #ffffff;
-  background-color: #d65f10d7;
+  background-image: linear-gradient(to bottom, #a73d00, #ca5100);
   text-decoration: none;
   box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.2), 0 0px 2px 0 rgba(0, 0, 0, 0.19);
 }
@@ -475,7 +478,7 @@ p {
     white-space: nowrap;
     flex-wrap: wrap;
     margin: 0;
-    background-color: rgba(255, 255, 255, 0);
+    background-image: linear-gradient(to bottom, #ffffff00, #ffffff00);
     font-size: clamp(0.7rem, 0.1rem + 0.96vw, 1rem);
     transition: transform 0.3s, width 0.6s;
     text-shadow: 0px 3px 6px rgb(0, 0, 0);
