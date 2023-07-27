@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var isDragging = false;
   var startX = 0;
   var deltaX = 0;
-  var slideInterval = 6000; // Time between automatic slides in milliseconds
+  var slideInterval = 10000; // Time between automatic slides in milliseconds
   var slideTimer;
 
   // Function to slide to the next item
