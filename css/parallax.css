@@ -42,7 +42,7 @@ html {
 .content-container {
   position: relative;
   height: 100vh;
-  min-height: 1425px;
+  min-height: 1500px;
   display: flex;
   overflow: hidden;
   justify-content: center;
@@ -223,6 +223,7 @@ html {
   padding: 20px;
   position: relative;
   display: flex;
+  flex-direction: column;
   color: #fff;
   text-align: center;
   align-items: center;
@@ -265,8 +266,8 @@ html {
 .container2_sep_container {
   position: relative;
   width: 50%;
-  height: 100%;
-  border-left: 2px solid #fc5c00d8;
+  height: 0%;
+  border-left: 2px solid #000000d8;
   background-image: linear-gradient(to bottom, #646464, #1b1b1b);
 }
 
@@ -403,20 +404,22 @@ html {
 
 .carousel_divider {
   position: relative;
-  width: 40%;
+  width: 43%;
   padding: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.3s;
 }
 
 .carousel2_divider {
   position: relative;
-  width: 40%;
+  width: 43%;
   padding: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.3s;
 }
 
 .carousel2-container {
@@ -460,12 +463,12 @@ html {
 
 .carousel2_button {
   font-size: clamp(0.5rem, 0.1rem + 0.96vw, 0.7rem);
-  padding: 10px 20px;
+  padding: 8px;
   margin: 0;
   text-shadow: 0px 0px 6px rgb(0, 0, 0);
   background-color: #d65f10d7;
   text-decoration: none;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Quicksand", serif;
   box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.2), 0 0px 2px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -660,6 +663,18 @@ html {
     width: 4px;
     height: 4px;
     margin: 0 3px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .carousel_divider {
+    width: 50%;
+    transition: 0.3s;
+  }
+
+  .carousel2_divider {
+    width: 50%;
+    transition: 0.3s;
   }
 }
 
@@ -963,9 +978,10 @@ nav {
   }
 }
 
-@media screen and (max-width: 728px) {
+@media screen and (max-width: 605px) {
   .content-container {
     min-height: 1225px;
+    transition: 1s;
   }
 }
 

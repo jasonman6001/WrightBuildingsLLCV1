@@ -24,6 +24,7 @@ ul {
   overflow: hidden;
   justify-content: center;
   align-items: center;
+  text-align: center;
   flex-direction: column;
   width: 100%;
 }
@@ -32,7 +33,7 @@ ul {
   position: relative;
   color: #ffffff;
   overflow: hidden;
-  font-size: clamp(1.2rem, 0.1rem + 0.96vw, 2rem);
+  font-size: clamp(1.5rem, -0.125rem + 3.2vw, 2.875rem);
   text-shadow: 0px 3px 6px rgb(0, 0, 0);
   margin: 0 auto;
 }
@@ -106,7 +107,7 @@ ul {
 .content {
   position: relative;
   width: 1600px; /* Set the initial width for each content */
-  height: 360px;
+  height: 450px;
   overflow: hidden;
   padding: 10px;
   border: 1px solid #ccc;
@@ -235,8 +236,8 @@ ul {
   object-fit: cover;
   image-rendering: optimizeQuality;
   background-repeat: no-repeat;
-  width: 270px; /* Set the width for each thumbnail image */
-  height: 270px;
+  width: 170px; /* Set the width for each thumbnail image */
+  height: 360px;
   transition: width 0.3s;
 }
 
