@@ -571,7 +571,7 @@ html {
   background-color: rgba(0, 0, 0, 0.43);
   color: #fff;
   opacity: 1;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.1s ease;
 }
 
 .carousel-item:hover .overlay {
